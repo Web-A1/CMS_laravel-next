@@ -1,0 +1,60 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "Commercial LMS source showcase with isolated fictional demo data.",
+    "keywords": ["laravel", "framework"],
+    "license": "proprietary",
+    "require": {
+        "php": "^8.5.12",
+        "filament/filament": "^5.0",
+        "firebase/php-jwt": "^7.1",
+        "laravel/framework": "^13.7",
+        "laravel/sanctum": "^4.3",
+        "laravel/tinker": "^3.0",
+        "league/flysystem-aws-s3-v3": "^3.25.1",
+        "predis/predis": "^2.2",
+        "setasign/fpdf": "^1.9",
+        "setasign/fpdi": "^2.6.8",
+        "webklex/php-imap": "^6.2"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "laravel/pail": "^1.2.5",
+        "laravel/pao": "^1.0.6",
+        "laravel/pint": "^1.27",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.6",
+        "phpunit/phpunit": "^12.5.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "python3 ../scripts/demo.py test-backend"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": false
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

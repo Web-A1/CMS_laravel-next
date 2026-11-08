@@ -1,0 +1,891 @@
+.assessmentPage,
+.assessmentSidebar,
+.assessmentSidebarViewport {
+  min-width: 0;
+}
+
+.assessmentResultMain {
+  display: grid;
+  min-width: 0;
+  grid-template-areas:
+    "intro"
+    "hero"
+    "scores"
+    "manual"
+    "actions"
+    "person";
+}
+
+.assessmentResultIntro {
+  min-width: 0;
+  grid-area: intro;
+}
+
+.assessmentResultHero {
+  display: grid;
+  min-width: 0;
+  justify-items: center;
+  gap: 0.5rem;
+  grid-area: hero;
+  text-align: center;
+}
+
+.assessmentResultHeadline {
+  display: grid;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  justify-items: center;
+  gap: 0.75rem;
+}
+
+.assessmentResultTitle {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.assessmentResultScore {
+  display: inline-flex;
+  flex: none;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+.assessmentResultBrandText {
+  color: var(--color-brand-hover);
+}
+
+.assessmentResultBrandMetric {
+  color: var(--color-brand);
+}
+
+.assessmentResultPercentSign {
+  margin-inline-start: 0.25rem;
+}
+
+.assessmentResultRequirements {
+  min-width: 0;
+  max-width: 100%;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: start;
+}
+
+.assessmentResultScores {
+  min-width: 0;
+  grid-area: scores;
+  container-name: assessment-result-scores;
+  container-type: inline-size;
+}
+
+.assessmentResultAutomaticScores {
+  min-width: 0;
+}
+
+.assessmentResultAutomaticScoreItem {
+  min-height: 3.5rem;
+  padding-block: 0.75rem;
+}
+
+.assessmentResultAutomaticScoreItem:first-child {
+  padding-block-start: 0;
+}
+
+.assessmentResultAutomaticScoreItem:last-child {
+  padding-block-end: 0;
+}
+
+.assessmentResultAutomaticScoreItem:not(:last-child) {
+  border-block-end: 1px solid var(--color-border-subtle);
+}
+
+.assessmentResultActions {
+  min-width: 0;
+  grid-area: actions;
+}
+
+.assessmentResultManual {
+  min-width: 0;
+  grid-area: manual;
+}
+
+.assessmentResultScoreGrid {
+  --assessment-result-divider-gap: 1rem;
+
+  display: grid;
+  font-size: 0.875rem;
+}
+
+.assessmentResultScoreItem {
+  position: relative;
+  display: grid;
+  min-height: 3rem;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  justify-content: start;
+  column-gap: 0.75rem;
+  padding-block: 0.5rem;
+}
+
+.assessmentResultScoreItem > dt,
+.assessmentResultScoreItem > dd {
+  white-space: nowrap;
+}
+
+.assessmentResultScoreItem:not(:last-child)::after {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  height: 1px;
+  background: var(--color-border-subtle);
+  content: "";
+}
+
+.assessmentResultPerson {
+  position: relative;
+  min-width: 0;
+  min-height: 16rem;
+  overflow: hidden;
+  grid-area: person;
+}
+
+.assessmentResultImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+@container assessment-result-scores (min-width: 30rem) {
+  .assessmentResultAutomaticScores {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.18fr) minmax(0, 0.9fr);
+  }
+
+  .assessmentResultAutomaticScoreItem {
+    min-height: 0;
+    padding-block: 0;
+    padding-inline: 1rem;
+    border-block-end: 0;
+  }
+
+  .assessmentResultAutomaticScoreItem:first-child {
+    padding-inline: 0 1rem;
+  }
+
+  .assessmentResultAutomaticScoreItem:last-child {
+    padding-inline: 1rem 0;
+  }
+
+  .assessmentResultAutomaticScoreItem:not(:last-child) {
+    border-block-end: 0;
+    border-inline-end: 1px solid var(--color-border-subtle);
+  }
+}
+
+@media (min-width: 64rem) {
+  :global(.lk-learning-detail-layout):has(.assessmentPage) {
+    --assessment-viewport-offset: calc(
+      var(--header-visible-bottom) + var(--breadcrumbs-gap) + var(--breadcrumbs-bottom-gap) + var(--breadcrumbs-line-height)
+    );
+    --assessment-footer-reveal: 4rem;
+
+    min-height: calc(
+      100dvh - var(--assessment-viewport-offset) - var(--page-content-bottom) -
+      var(--assessment-footer-reveal)
+    );
+  }
+
+  :global(.lk-learning-detail-layout):has(.assessmentPage) > aside {
+    min-height: 0;
+    align-self: stretch;
+  }
+
+  .assessmentPage {
+    min-height: calc(
+      100dvh - var(--assessment-viewport-offset) - var(--page-content-bottom) -
+      var(--assessment-footer-reveal)
+    );
+    align-content: start;
+  }
+
+  .assessmentSidebar {
+    --assessment-sidebar-scrollbar-width: 0.75rem;
+    --assessment-sidebar-scrollbar-axis-inset: 0.375rem;
+    --assessment-sidebar-outline-width: 1px;
+    --assessment-sidebar-outline-half-width: 0.5px;
+    --assessment-sidebar-outline-color: rgb(161 161 170 / 42%);
+    --assessment-sidebar-outline-radius: 1rem;
+
+    position: sticky;
+    top: 6rem;
+    height: calc(
+      100dvh - var(--assessment-viewport-offset) - var(--page-content-bottom) -
+      var(--assessment-footer-reveal)
+    );
+    grid-template-rows: auto minmax(0, 1fr);
+    overflow: visible;
+  }
+
+  .assessmentSidebar::before {
+    position: absolute;
+    inset-block-start: -0.625rem;
+    inset-block-end: -1px;
+    inset-inline-start: -0.75rem;
+    inset-inline-end: calc(
+      var(--assessment-sidebar-scrollbar-axis-inset) -
+      var(--assessment-sidebar-outline-half-width)
+    );
+    border: var(--assessment-sidebar-outline-width) solid var(--assessment-sidebar-outline-color);
+    border-radius: var(--assessment-sidebar-outline-radius);
+    box-shadow: 0 0.625rem 1.75rem rgb(24 36 32 / 8%);
+    content: "";
+    pointer-events: none;
+  }
+
+  .assessmentSidebarViewport {
+    min-height: 0;
+    grid-template-rows: minmax(0, 1fr);
+    overflow: hidden;
+  }
+
+  .assessmentResultHero {
+    justify-items: stretch;
+    gap: 0.25rem;
+    text-align: start;
+  }
+
+  .assessmentResultHeadline {
+    grid-template-columns: minmax(0, 1fr) max-content;
+    align-items: end;
+    justify-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .assessmentResultTitle {
+    text-align: start;
+  }
+
+  .assessmentResultScore {
+    justify-self: start;
+  }
+
+  .assessmentResultScoreGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .assessmentResultScoreItem {
+    grid-template-columns: 10rem max-content;
+    column-gap: 0.5rem;
+  }
+
+  .assessmentResultScoreItem:nth-child(odd) {
+    padding-inline-end: var(--assessment-result-divider-gap);
+  }
+
+  .assessmentResultScoreItem:nth-child(even) {
+    grid-template-columns: 11.75rem max-content;
+    padding-inline-start: var(--assessment-result-divider-gap);
+  }
+
+  .assessmentResultScoreItem:nth-child(odd)::before {
+    position: absolute;
+    inset-block: 0.75rem;
+    inset-inline-end: 0;
+    width: 1px;
+    background: var(--color-border-subtle);
+    content: "";
+  }
+
+  .assessmentResultScoreItem::after {
+    display: none;
+  }
+
+  .assessmentResultScoreItem:nth-child(1)::after,
+  .assessmentResultScoreItem:nth-child(2)::after {
+    display: block;
+    inset-block-end: 0;
+    height: 1px;
+  }
+
+  .assessmentResultScoreItem:nth-child(1)::after {
+    inset-inline-start: 0;
+    inset-inline-end: var(--assessment-result-divider-gap);
+  }
+
+  .assessmentResultScoreItem:nth-child(2)::after {
+    inset-inline-start: var(--assessment-result-divider-gap);
+    inset-inline-end: 0;
+  }
+}
+
+@media (min-width: 80rem) {
+  .assessmentResultMain {
+    align-content: start;
+    grid-template-areas:
+      "intro intro"
+      "hero person"
+      "scores person"
+      "manual person"
+      "actions person";
+    grid-template-columns: minmax(0, 1.6fr) minmax(20rem, 1fr);
+  }
+
+  .assessmentResultPerson {
+    min-height: 0;
+  }
+}
+
+.diagramLayout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.interactiveDiagramLayout {
+  display: grid;
+  min-width: 0;
+  gap: 1rem;
+}
+
+.interactiveDiagramViewport {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.interactiveDiagramViewport:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 0.25rem;
+}
+
+.interactiveDiagramCrop {
+  display: contents;
+}
+
+.interactiveDiagramStage {
+  position: relative;
+  width: calc(100% * var(--diagram-stage-scale));
+  min-width: calc(48rem * var(--diagram-stage-scale));
+  max-width: calc(64rem * var(--diagram-stage-scale));
+  margin-inline: auto;
+  margin-block-start: var(--diagram-stage-top-clearance);
+  margin-block-end: var(--diagram-stage-bottom-clearance);
+  aspect-ratio: var(--diagram-aspect);
+}
+
+.interactiveDiagramStage:has([role="listbox"]),
+.interactiveDiagramStage:has([data-ui$=".suggestionWarning"]) {
+  z-index: 20;
+}
+
+@media (min-width: 80rem) {
+  .interactiveDiagramViewport {
+    overflow: visible;
+  }
+
+  .interactiveDiagramCrop {
+    position: relative;
+    display: block;
+    width: calc(100% * var(--diagram-stage-scale));
+    min-width: calc(48rem * var(--diagram-stage-scale));
+    max-width: calc(64rem * var(--diagram-stage-scale));
+    margin-inline: auto;
+    margin-block-start: var(--diagram-stage-top-clearance);
+    margin-block-end: var(--diagram-stage-bottom-clearance);
+    aspect-ratio: var(--diagram-crop-aspect);
+    overflow: visible;
+  }
+
+  .interactiveDiagramStage {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline: 0;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    transform: translateY(var(--diagram-stage-shift-y));
+  }
+}
+
+.interactiveDiagramLines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  color: var(--color-brand-deep);
+  pointer-events: none;
+}
+
+.interactiveDiagramLineHalo,
+.interactiveDiagramLine {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.interactiveDiagramLineHalo {
+  stroke: var(--color-surface);
+  stroke-width: 2px;
+}
+
+.interactiveDiagramLine {
+  stroke: currentColor;
+  stroke-width: 1px;
+}
+
+.interactiveDiagramPoint {
+  fill: currentColor;
+  stroke: var(--color-surface);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.interactiveDiagramArrow,
+.interactiveDiagramArrowIncorrect {
+  stroke: var(--color-surface);
+  stroke-width: 1.5;
+}
+
+.interactiveDiagramArrow {
+  fill: var(--color-brand-deep);
+}
+
+.interactiveDiagramArrowIncorrect {
+  fill: var(--color-danger);
+}
+
+.interactiveDiagramLines g[data-state="incorrect"] {
+  color: var(--color-danger);
+}
+
+.diagramCalibrationTargetSelection {
+  fill: none;
+  stroke: var(--color-brand);
+  stroke-width: 2;
+  stroke-dasharray: 4 3;
+  vector-effect: non-scaling-stroke;
+}
+
+.interactiveDiagramField {
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.interactiveDiagramField[data-label-side="left"] {
+  justify-items: end;
+}
+
+.interactiveDiagramField[data-label-side="bottom"],
+.interactiveDiagramField[data-label-side="top"] {
+  justify-items: center;
+}
+
+.interactiveDiagramField[data-label-side="bottom"] {
+  transform: translateX(-50%);
+}
+
+.interactiveDiagramField[data-label-side="top"] {
+  transform: translate(-50%, -100%);
+}
+
+.interactiveDiagramField[data-label-side="left"] > span > textarea {
+  justify-self: stretch;
+  text-align: left;
+}
+
+.interactiveDiagramField[data-label-side="left"] > span > button {
+  justify-content: flex-end;
+}
+
+.interactiveDiagramField[data-label-side="left"] > span > button > span {
+  text-align: right;
+}
+
+.interactiveDiagramField:focus-within {
+  z-index: 40;
+}
+
+.interactiveDiagramField:has([data-ui$=".suggestionWarning"]) {
+  z-index: 60;
+}
+
+.diagramAnswerTextArea {
+  padding-block: 0.375rem;
+}
+
+.diagramAnswerTextArea:focus::placeholder {
+  opacity: 0;
+}
+
+.interactiveDiagramField[data-calibration-selected="true"] {
+  border-radius: var(--radius-control);
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+}
+
+.diagramCalibrationLauncher {
+  display: flex;
+  min-height: 2rem;
+  align-items: center;
+}
+
+.diagramCalibrationLauncherButton,
+.diagramCalibrationQuietButton,
+.diagramCalibrationPrimaryButton,
+.diagramCalibrationControlButton,
+.diagramCalibrationDirectionButton {
+  min-height: 2rem;
+  border: 1px solid var(--color-border-control);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.diagramCalibrationLauncherButton,
+.diagramCalibrationQuietButton,
+.diagramCalibrationPrimaryButton {
+  padding-inline: 0.75rem;
+}
+
+.diagramCalibrationLauncherButton:hover,
+.diagramCalibrationQuietButton:hover,
+.diagramCalibrationControlButton:hover,
+.diagramCalibrationDirectionButton:hover {
+  background: var(--color-surface-raised);
+}
+
+.diagramCalibrationLauncherButton:focus-visible,
+.diagramCalibrationQuietButton:focus-visible,
+.diagramCalibrationPrimaryButton:focus-visible,
+.diagramCalibrationControlButton:focus-visible,
+.diagramCalibrationDirectionButton:focus-visible,
+.diagramCalibrationSelect:focus-visible,
+.diagramCalibrationExport:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+.diagramCalibrationPanel {
+  display: grid;
+  gap: 0.75rem;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-surface);
+  background: var(--color-surface-subtle);
+  padding: 0.75rem;
+}
+
+.diagramCalibrationHeader {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.diagramCalibrationTitle,
+.diagramCalibrationStatus {
+  margin: 0;
+}
+
+.diagramCalibrationTitle {
+  color: var(--color-text-primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.diagramCalibrationStatus {
+  margin-top: 0.2rem;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.diagramCalibrationStatus[data-state="fixed"] {
+  color: var(--color-brand-deep);
+}
+
+.diagramCalibrationControls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.625rem 0.75rem;
+}
+
+.diagramCalibrationSelectLabel,
+.diagramCalibrationGroup {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.diagramCalibrationSelectLabel > span,
+.diagramCalibrationGroup legend {
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.diagramCalibrationSelectLabel {
+  min-width: min(16rem, 100%);
+  flex: 1 1 15rem;
+}
+
+.diagramCalibrationSelect {
+  min-height: 2rem;
+  width: 100%;
+  border: 1px solid var(--color-border-control);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  padding-inline: 0.625rem 2rem;
+  color: var(--color-text-primary);
+  font-size: 0.75rem;
+}
+
+.diagramCalibrationGroup {
+  min-width: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.diagramCalibrationSegmented {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.diagramCalibrationControlButton,
+.diagramCalibrationDirectionButton {
+  min-width: 2.25rem;
+  padding-inline: 0.5rem;
+}
+
+.diagramCalibrationControlButton[data-active="true"] {
+  border-color: var(--color-brand);
+  background: var(--color-brand-surface);
+  color: var(--color-brand-deep);
+}
+
+.diagramCalibrationDirectionButton {
+  font-size: 1rem;
+}
+
+.diagramCalibrationCoordinates {
+  min-height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  padding-inline: 0.625rem;
+  color: var(--color-text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: var(--text-xs);
+}
+
+.diagramCalibrationActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.diagramCalibrationPrimaryButton {
+  border-color: var(--color-brand);
+  background: var(--color-brand);
+  color: #fff;
+}
+
+.diagramCalibrationPrimaryButton:hover {
+  background: var(--color-brand-hover);
+}
+
+.diagramCalibrationExport {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid var(--color-border-control);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  padding: 0.625rem;
+  color: var(--color-text-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: var(--text-xs);
+  line-height: 1.45;
+}
+
+.imageFrame {
+  position: relative;
+  aspect-ratio: var(--diagram-aspect);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.atomicDiagramHidden {
+  visibility: hidden;
+}
+
+.atomicDiagramVisible {
+  visibility: visible;
+}
+
+.diagramImagePlaceholder {
+  position: absolute;
+  z-index: 50;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--color-surface-subtle);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.questionList {
+  min-height: 0;
+  padding-block-start: 0;
+  padding-block-end: 0.375rem;
+  scrollbar-gutter: stable;
+}
+
+.questionList .questionLink {
+  align-items: center;
+  gap: 0;
+  min-height: 1.5rem;
+  width: calc(100% + 0.375rem);
+  margin-inline: -0.1875rem;
+  padding-block: 0;
+}
+
+.resultNavigationItem {
+  margin-block-start: 0.125rem;
+  padding-block-start: 0.375rem;
+  border-block-start: 1px solid var(--color-border-subtle);
+}
+
+.questionLinkContent {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  align-items: flex-start;
+  column-gap: 0.375rem;
+}
+
+.questionLinkNumber {
+  min-width: 0;
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+}
+
+.questionLinkLabel {
+  min-width: 0;
+}
+
+.questionList .questionLink[data-completion-state="completed"]:not([data-state="active"]) {
+  color: var(--color-text-soft);
+  -webkit-text-fill-color: var(--color-text-soft);
+}
+
+.questionList .questionLink[data-completion-state="completed"]:not([data-state="active"]):hover {
+  color: var(--color-text-muted);
+  -webkit-text-fill-color: var(--color-text-muted);
+}
+
+.questionList .questionLink[data-review-state="correct"],
+.reviewAnswerCorrect {
+  border-color: color-mix(in srgb, var(--color-success) 42%, var(--color-border-subtle));
+  background: color-mix(in srgb, var(--color-success) 8%, var(--color-surface));
+  color: var(--color-success);
+  -webkit-text-fill-color: var(--color-success);
+}
+
+.questionList .questionLink[data-review-state="incorrect"],
+.reviewAnswerIncorrect {
+  border-color: color-mix(in srgb, var(--color-danger) 42%, var(--color-border-subtle));
+  background: color-mix(in srgb, var(--color-danger) 7%, var(--color-surface));
+  color: var(--color-danger);
+  -webkit-text-fill-color: var(--color-danger);
+}
+
+.questionList .questionLink[data-review-state="reviewed"] {
+  border-color: color-mix(in srgb, var(--color-brand) 42%, var(--color-border-subtle));
+  background: var(--color-brand-surface);
+  color: var(--color-brand);
+  -webkit-text-fill-color: var(--color-brand);
+}
+
+.reviewAnswerCorrect input {
+  accent-color: var(--color-success);
+}
+
+.reviewAnswerIncorrect input {
+  accent-color: var(--color-danger);
+}
+
+.reviewAnswerCorrect:disabled,
+.reviewAnswerIncorrect:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.reviewAnswerCorrect:disabled {
+  background: color-mix(in srgb, var(--color-success) 8%, var(--color-surface));
+}
+
+.reviewAnswerIncorrect:disabled {
+  background: color-mix(in srgb, var(--color-danger) 7%, var(--color-surface));
+}
+
+.questionList::-webkit-scrollbar {
+  width: var(--assessment-sidebar-scrollbar-width, 0.75rem);
+}
+
+.questionList::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block-end: var(--assessment-sidebar-outline-radius, 1rem);
+}
+
+.questionList::-webkit-scrollbar-thumb {
+  border-block: 0;
+  border-inline: 0.125rem solid transparent;
+  border-radius: 999px;
+  background: rgb(161 161 170);
+  background-clip: content-box;
+}
+
+.questionList::-webkit-scrollbar-thumb:hover {
+  background: rgb(132 153 147);
+  background-clip: content-box;
+}
+
+@media (min-width: 768px) {
+  .diagramLayout {
+    grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.85fr);
+    align-items: start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marker {
+    transition: none;
+  }
+}

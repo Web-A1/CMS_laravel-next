@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="../vendor/autoload.php" colors="true">
+    <testsuites><testsuite name="Article media PostgreSQL interleaving"><file>Feature/ArticleMediaPostgresTest.php</file></testsuite></testsuites>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="CACHE_STORE" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+    </php>
+</phpunit>

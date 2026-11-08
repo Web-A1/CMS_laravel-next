@@ -1,0 +1,42 @@
+{
+  "book": {
+    "avifSrc": "/images/v2/home/comparison-book-1056x792.avif",
+    "webpSrc": "/images/v2/home/comparison-book-1056x792.webp",
+    "width": 1056,
+    "height": 792,
+    "variants": [
+      {
+        "avifSrc": "/images/v2/home/comparison-book-528x396.avif",
+        "webpSrc": "/images/v2/home/comparison-book-528x396.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "avifSrc": "/images/v2/home/comparison-book-1056x792.avif",
+        "webpSrc": "/images/v2/home/comparison-book-1056x792.webp",
+        "width": 1056,
+        "height": 792
+      }
+    ]
+  },
+  "notes": {
+    "avifSrc": "/images/v2/home/comparison-notes-1056x792.avif",
+    "webpSrc": "/images/v2/home/comparison-notes-1056x792.webp",
+    "width": 1056,
+    "height": 792,
+    "variants": [
+      {
+        "avifSrc": "/images/v2/home/comparison-notes-528x396.avif",
+        "webpSrc": "/images/v2/home/comparison-notes-528x396.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "avifSrc": "/images/v2/home/comparison-notes-1056x792.avif",
+        "webpSrc": "/images/v2/home/comparison-notes-1056x792.webp",
+        "width": 1056,
+        "height": 792
+      }
+    ]
+  }
+}

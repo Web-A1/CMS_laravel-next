@@ -1,0 +1,70 @@
+.workspace {
+  margin-top: calc(var(--breadcrumbs-gap) * -1);
+}
+
+.desktopNav {
+  display: none;
+}
+
+.sidebarAction {
+  display: flex;
+  width: 100%;
+  min-width: 100%;
+}
+
+@media (min-width: 64rem) {
+  .desktopNav {
+    display: grid;
+    gap: 0.5rem;
+    margin-inline-start: -0.75rem;
+    padding: 0.75rem;
+    border: 1px solid rgb(161 161 170 / 42%);
+    border-radius: 1rem;
+    background: var(--color-surface);
+  }
+
+  .navLink {
+    display: grid;
+    width: 100%;
+    min-height: 2rem;
+    align-items: center;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.5rem;
+    color: rgb(82 82 91);
+    font-size: var(--type-admin-nav-size);
+    font-weight: 500;
+    line-height: var(--type-admin-line-height);
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .navLinkLabel {
+    grid-area: 1 / 1;
+  }
+
+  .navLink::after {
+    content: attr(data-label);
+    grid-area: 1 / 1;
+    height: 0;
+    overflow: hidden;
+    font-weight: 700;
+    pointer-events: none;
+    user-select: none;
+    visibility: hidden;
+  }
+
+  .navLink:hover {
+    color: rgb(24 24 27);
+  }
+
+  .navLink[data-state="active"] {
+    color: rgb(17 94 89);
+    font-weight: 700;
+  }
+
+  .sidebarAction {
+    margin-inline-start: -0.75rem;
+    width: calc(100% + 0.75rem);
+    min-width: calc(100% + 0.75rem);
+  }
+}

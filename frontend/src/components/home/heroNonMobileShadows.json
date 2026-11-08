@@ -1,0 +1,74 @@
+{
+  "1": {
+    "width": 179,
+    "height": 174,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-1-179x174.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-1-179x174.webp",
+    "paddingX": 5.590062111801243,
+    "paddingY": 5.769230769230769
+  },
+  "2": {
+    "width": 260,
+    "height": 244,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-2-260x244.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-2-260x244.webp",
+    "paddingX": 5.555555555555555,
+    "paddingY": 5.963302752293578
+  },
+  "3": {
+    "width": 166,
+    "height": 165,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-3-166x165.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-3-166x165.webp",
+    "paddingX": 6.081081081081082,
+    "paddingY": 6.122448979591836
+  },
+  "4": {
+    "width": 136,
+    "height": 124,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-4-136x124.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-4-136x124.webp",
+    "paddingX": 7.627118644067797,
+    "paddingY": 8.49056603773585
+  },
+  "5": {
+    "width": 102,
+    "height": 94,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-5-102x94.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-5-102x94.webp",
+    "paddingX": 10.714285714285714,
+    "paddingY": 11.842105263157894
+  },
+  "6": {
+    "width": 118,
+    "height": 112,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-6-118x112.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-6-118x112.webp",
+    "paddingX": 9.0,
+    "paddingY": 9.574468085106384
+  },
+  "7": {
+    "width": 173,
+    "height": 157,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-7-173x157.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-7-173x157.webp",
+    "paddingX": 8.843537414965986,
+    "paddingY": 9.923664122137405
+  },
+  "8": {
+    "width": 339,
+    "height": 306,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-8-339x306.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-8-339x306.webp",
+    "paddingX": 4.15335463258786,
+    "paddingY": 4.642857142857143
+  },
+  "9": {
+    "width": 122,
+    "height": 111,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-9-122x111.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/shadows/shadow-9-122x111.webp",
+    "paddingX": 8.653846153846153,
+    "paddingY": 9.67741935483871
+  }
+}

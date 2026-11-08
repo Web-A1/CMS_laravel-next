@@ -1,0 +1,8 @@
+<x-filament-panels::page>
+    @include('filament.tables.previous-search', ['previousSearch' => $q])
+    @if ($errors->any())<div role="alert">@foreach ($errors->all() as $message)<p>{{ $message }}</p>@endforeach</div>@endif
+    <p>Импортированная история доступна только для чтения.</p>
+    <x-filament::section><div style="overflow-x:auto"><table style="width:100%;text-align:left;font-size:.875rem"><caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Импортированные пользователи</caption><thead><tr>@include('filament.tables.plain-header', ['tableKey' => 'legacy'])</tr></thead><tbody>
+        @forelse ($listing['data'] as $row)<tr style="border-top:1px solid #d1d5db"><td style="padding:.75rem"><x-filament::link :href="'/admin/legacy-users/'.$row['source_member_id']">{{ $row['name'] ?: 'Без имени' }}</x-filament::link><div>№ {{ $row['source_member_id'] }}</div></td><td style="padding:.75rem">{{ $row['email'] ?: '—' }}<br>{{ $row['phone'] ?: '—' }}</td><td style="padding:.75rem">{{ $row['mapping_status'] }}@if ($row['user_id'])<br><x-filament::link :href="'/admin/users/'.$row['user_id']">Текущий аккаунт № {{ $row['user_id'] }}</x-filament::link>@else<div>Текущий аккаунт отсутствует</div>@endif @if ($row['migration_hold'])<div>Ожидает миграции</div>@endif</td><td style="padding:.75rem">{{ \App\Support\Admin\UsersDisplay::date($row['source_created_at'], true) }}</td></tr>@empty<tr><td colspan="4" style="padding:1rem">Пользователи не найдены.</td></tr>@endforelse
+    </tbody></table></div>@include('filament.pages.users-pagination', ['listing' => $listing, 'property' => 'page'])</x-filament::section>
+</x-filament-panels::page>

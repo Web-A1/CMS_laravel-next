@@ -1,0 +1,8 @@
+@import "../../../public/article-document.css";
+
+.ui-image-zoom { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.ui-image-zoom:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 4px; }
+
+[data-ui="articles.showcase"] [data-ui="articles.body"] figure img {
+  border-radius: var(--radius-inner);
+}

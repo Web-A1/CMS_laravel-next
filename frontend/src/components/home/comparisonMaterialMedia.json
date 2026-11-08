@@ -1,0 +1,212 @@
+{
+  "panoramic": {
+    "academic": {
+      "avifSrc": "/images/v2/home/comparison-academic-laptop-wide-2300x916.avif",
+      "webpSrc": "/images/v2/home/comparison-academic-laptop-wide-2300x916.webp",
+      "width": 2300,
+      "height": 916,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-laptop-wide-1150x458.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-laptop-wide-1150x458.webp",
+          "width": 1150,
+          "height": 458
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-laptop-wide-2300x916.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-laptop-wide-2300x916.webp",
+          "width": 2300,
+          "height": 916
+        }
+      ]
+    },
+    "school": {
+      "avifSrc": "/images/v2/home/comparison-school-laptop-wide-2300x916.avif",
+      "webpSrc": "/images/v2/home/comparison-school-laptop-wide-2300x916.webp",
+      "width": 2300,
+      "height": 916,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-school-laptop-wide-1150x458.avif",
+          "webpSrc": "/images/v2/home/comparison-school-laptop-wide-1150x458.webp",
+          "width": 1150,
+          "height": 458
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-school-laptop-wide-2300x916.avif",
+          "webpSrc": "/images/v2/home/comparison-school-laptop-wide-2300x916.webp",
+          "width": 2300,
+          "height": 916
+        }
+      ]
+    }
+  },
+  "shortLandscape": {
+    "academic": {
+      "avifSrc": "/images/v2/home/comparison-academic-laptop-short-2300x858.avif",
+      "webpSrc": "/images/v2/home/comparison-academic-laptop-short-2300x858.webp",
+      "width": 2300,
+      "height": 858,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-laptop-short-1150x429.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-laptop-short-1150x429.webp",
+          "width": 1150,
+          "height": 429
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-laptop-short-2300x858.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-laptop-short-2300x858.webp",
+          "width": 2300,
+          "height": 858
+        }
+      ]
+    },
+    "school": {
+      "avifSrc": "/images/v2/home/comparison-school-laptop-short-2300x858.avif",
+      "webpSrc": "/images/v2/home/comparison-school-laptop-short-2300x858.webp",
+      "width": 2300,
+      "height": 858,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-school-laptop-short-1150x429.avif",
+          "webpSrc": "/images/v2/home/comparison-school-laptop-short-1150x429.webp",
+          "width": 1150,
+          "height": 429
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-school-laptop-short-2300x858.avif",
+          "webpSrc": "/images/v2/home/comparison-school-laptop-short-2300x858.webp",
+          "width": 2300,
+          "height": 858
+        }
+      ]
+    }
+  },
+  "narrowLandscape": {
+    "academic": {
+      "avifSrc": "/images/v2/home/comparison-academic-landscape-narrow-2300x1198.avif",
+      "webpSrc": "/images/v2/home/comparison-academic-landscape-narrow-2300x1198.webp",
+      "width": 2300,
+      "height": 1198,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-landscape-narrow-1150x599.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-landscape-narrow-1150x599.webp",
+          "width": 1150,
+          "height": 599
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-landscape-narrow-2300x1198.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-landscape-narrow-2300x1198.webp",
+          "width": 2300,
+          "height": 1198
+        }
+      ]
+    },
+    "school": {
+      "avifSrc": "/images/v2/home/comparison-school-landscape-narrow-2300x1198.avif",
+      "webpSrc": "/images/v2/home/comparison-school-landscape-narrow-2300x1198.webp",
+      "width": 2300,
+      "height": 1198,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-school-landscape-narrow-1150x599.avif",
+          "webpSrc": "/images/v2/home/comparison-school-landscape-narrow-1150x599.webp",
+          "width": 1150,
+          "height": 599
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-school-landscape-narrow-2300x1198.avif",
+          "webpSrc": "/images/v2/home/comparison-school-landscape-narrow-2300x1198.webp",
+          "width": 2300,
+          "height": 1198
+        }
+      ]
+    }
+  },
+  "phonePortrait": {
+    "academic": {
+      "avifSrc": "/images/v2/home/comparison-academic-portrait-phone-1080x1800.avif",
+      "webpSrc": "/images/v2/home/comparison-academic-portrait-phone-1080x1800.webp",
+      "width": 1080,
+      "height": 1800,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-portrait-phone-540x900.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-portrait-phone-540x900.webp",
+          "width": 540,
+          "height": 900
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-portrait-phone-1080x1800.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-portrait-phone-1080x1800.webp",
+          "width": 1080,
+          "height": 1800
+        }
+      ]
+    },
+    "school": {
+      "avifSrc": "/images/v2/home/comparison-school-portrait-phone-1080x1800.avif",
+      "webpSrc": "/images/v2/home/comparison-school-portrait-phone-1080x1800.webp",
+      "width": 1080,
+      "height": 1800,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-school-portrait-phone-540x900.avif",
+          "webpSrc": "/images/v2/home/comparison-school-portrait-phone-540x900.webp",
+          "width": 540,
+          "height": 900
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-school-portrait-phone-1080x1800.avif",
+          "webpSrc": "/images/v2/home/comparison-school-portrait-phone-1080x1800.webp",
+          "width": 1080,
+          "height": 1800
+        }
+      ]
+    }
+  },
+  "tabletPortrait": {
+    "academic": {
+      "avifSrc": "/images/v2/home/comparison-academic-portrait-tablet-2300x2300.avif",
+      "webpSrc": "/images/v2/home/comparison-academic-portrait-tablet-2300x2300.webp",
+      "width": 2300,
+      "height": 2300,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-portrait-tablet-1150x1150.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-portrait-tablet-1150x1150.webp",
+          "width": 1150,
+          "height": 1150
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-academic-portrait-tablet-2300x2300.avif",
+          "webpSrc": "/images/v2/home/comparison-academic-portrait-tablet-2300x2300.webp",
+          "width": 2300,
+          "height": 2300
+        }
+      ]
+    },
+    "school": {
+      "avifSrc": "/images/v2/home/comparison-school-portrait-tablet-2300x2300.avif",
+      "webpSrc": "/images/v2/home/comparison-school-portrait-tablet-2300x2300.webp",
+      "width": 2300,
+      "height": 2300,
+      "variants": [
+        {
+          "avifSrc": "/images/v2/home/comparison-school-portrait-tablet-1150x1150.avif",
+          "webpSrc": "/images/v2/home/comparison-school-portrait-tablet-1150x1150.webp",
+          "width": 1150,
+          "height": 1150
+        },
+        {
+          "avifSrc": "/images/v2/home/comparison-school-portrait-tablet-2300x2300.avif",
+          "webpSrc": "/images/v2/home/comparison-school-portrait-tablet-2300x2300.webp",
+          "width": 2300,
+          "height": 2300
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2400 @@
+{
+  "capturedOn": "2026-11-08",
+  "sources": {
+    "subjects": {
+      "url": "https://staging.christmedschool.com/backend/api/v1/catalog/subjects",
+      "fields": [
+        "slug",
+        "title",
+        "courses.slug",
+        "courses.title",
+        "courses.shortTitle",
+        "courses.price"
+      ],
+      "omitted": [
+        "ids",
+        "itemId",
+        "sellable",
+        "lessons"
+      ]
+    },
+    "teachers": {
+      "url": "https://staging.christmedschool.com/backend/api/v1/content-authors?placement=home",
+      "fields": [
+        "slug",
+        "name",
+        "homeRoleText",
+        "cutoutKey (mapped to local asset key)"
+      ],
+      "omitted": [
+        "ids",
+        "avatarUrl",
+        "avatarVariants",
+        "photoUrl",
+        "photoVariants"
+      ]
+    },
+    "reviews": {
+      "url": "https://staging.christmedschool.com/backend/api/v1/reviews?placement=home&limit=20",
+      "fields": [
+        "displayName",
+        "text",
+        "reviewWrittenAt",
+        "subject.slug",
+        "course.slug",
+        "authorPhotoUrl (downloaded locally)"
+      ],
+      "omitted": [
+        "ids (only public detail URL retained)",
+        "source",
+        "importOrigin",
+        "publishedAt",
+        "media",
+        "sourceLinks"
+      ]
+    },
+    "faqs": {
+      "url": "https://staging.christmedschool.com/backend/api/v1/faqs?placement=home.faq",
+      "fields": [
+        "slug",
+        "question",
+        "answer",
+        "category"
+      ],
+      "omitted": [
+        "ids",
+        "subject",
+        "publishedAt",
+        "sortOrder"
+      ]
+    },
+    "static": {
+      "url": "https://staging.christmedschool.com/",
+      "fields": [
+        "visible marketing text",
+        "image URLs and responsive variants",
+        "public contact and documentary links"
+      ],
+      "omitted": [
+        "all video and PDF binaries"
+      ]
+    }
+  },
+  "subjects": [
+    {
+      "slug": "anatomiya",
+      "title": "Анатомия",
+      "courses": [
+        {
+          "slug": "osteologiya",
+          "title": "Остеология",
+          "shortTitle": "Остеология",
+          "price": 0
+        },
+        {
+          "slug": "artrologiya",
+          "title": "Артрология",
+          "shortTitle": "Артрология",
+          "price": 0
+        },
+        {
+          "slug": "miologiya",
+          "title": "Миология",
+          "shortTitle": "Миология",
+          "price": 0
+        },
+        {
+          "slug": "pishchevaritelnaya-sistema",
+          "title": "Пищеварительная система",
+          "shortTitle": "Пищеварительная система",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-dyhatelnoj-sisteme",
+          "title": "Интенсив по дыхательной системе",
+          "shortTitle": "Интенсив по дыхательной системе",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-mochepolovoj-sisteme",
+          "title": "Интенсив по мочеполовой системе",
+          "shortTitle": "Интенсив по мочеполовой системе",
+          "price": 0
+        },
+        {
+          "slug": "ehndokrinnaya-sistema",
+          "title": "Эндокринная система",
+          "shortTitle": "Эндокринная система",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-serdechno-sosudistoj-sisteme",
+          "title": "Интенсив по сердечно-сосудистой системе",
+          "shortTitle": "Интенсив по сердечно-сосудистой системе",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-tsentralnoj-nervnoj-sisteme",
+          "title": "Интенсив по центральной нервной системе",
+          "shortTitle": "Интенсив по центральной нервной системе",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-perifericheskoj-nervnoj-sisteme",
+          "title": "Интенсив по периферической нервной системе",
+          "shortTitle": "Интенсив по периферической нервной системе",
+          "price": 0
+        },
+        {
+          "slug": "immunnaya-i-limfaticheskaya-sistema",
+          "title": "Иммунная и лимфатическая система",
+          "shortTitle": "Иммунная и лимфатическая система",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "gistologiya",
+      "title": "Гистология",
+      "courses": [
+        {
+          "slug": "tsitologiya",
+          "title": "Цитология",
+          "shortTitle": "Цитология",
+          "price": 0
+        },
+        {
+          "slug": "obshchaya-gistologiya-tkani",
+          "title": "Общая гистология: ткани",
+          "shortTitle": "Общая гистология: ткани",
+          "price": 0
+        },
+        {
+          "slug": "nervnaya-sistema-i-organy-chuvstv",
+          "title": "Нервная система и органы чувств",
+          "shortTitle": "Нервная система и органы чувств",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-gistologii-pishchevaritelnoj-sistemy",
+          "title": "Интенсив по гистологии пищеварительной системы",
+          "shortTitle": "Интенсив по гистологии пищеварительной системы",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-gistologiya-dyhatelnoj-sistemy",
+          "title": "Интенсив Гистология дыхательной системы",
+          "shortTitle": "Интенсив Гистология дыхательной системы",
+          "price": 0
+        },
+        {
+          "slug": "gistologiya-mochepolovoj-sistemy",
+          "title": "Гистология мочеполовой системы",
+          "shortTitle": "Гистология мочеполовой системы",
+          "price": 0
+        },
+        {
+          "slug": "gistologiya-ehndokrinnoj-sistemy",
+          "title": "Гистология эндокринной системы",
+          "shortTitle": "Гистология эндокринной системы",
+          "price": 0
+        },
+        {
+          "slug": "gistologiya-serdechno-sosudistoj-sistemy",
+          "title": "Гистология сердечно-сосудистой системы",
+          "shortTitle": "Гистология сердечно-сосудистой системы",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-krovetvoreniyu-i-krovetvornym-organam",
+          "title": "Интенсив по кроветворению и кроветворным органам",
+          "shortTitle": "Интенсив по кроветворению и кроветворным органам",
+          "price": 0
+        },
+        {
+          "slug": "ehmbriologiya",
+          "title": "Эмбриология",
+          "shortTitle": "Эмбриология",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "latinskij-yazyk",
+      "title": "Латинский язык",
+      "courses": [
+        {
+          "slug": "latinskij-yazyk",
+          "title": "Латинский язык",
+          "shortTitle": "Латинский язык",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "bioorganicheskaya-himiya",
+      "title": "Биоорганическая химия",
+      "courses": [
+        {
+          "slug": "bioorganicheskaya-himiya",
+          "title": "Биоорганическая химия",
+          "shortTitle": "Биоорганическая химия",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "mikrobiologiya",
+      "title": "Микробиология",
+      "courses": [
+        {
+          "slug": "obshchaya-mikrobiologiya",
+          "title": "Общая Микробиология",
+          "shortTitle": "Общая Микробиология",
+          "price": 0
+        },
+        {
+          "slug": "immunologiya",
+          "title": "Иммунология",
+          "shortTitle": "Иммунология",
+          "price": 0
+        },
+        {
+          "slug": "kishechnye-infektsii",
+          "title": "Кишечные инфекции",
+          "shortTitle": "Кишечные инфекции",
+          "price": 0
+        },
+        {
+          "slug": "respiratornye-infektsii",
+          "title": "Респираторные инфекции",
+          "shortTitle": "Респираторные инфекции",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "fiziologiya",
+      "title": "Нормальная физиология",
+      "courses": [
+        {
+          "slug": "fiziologiya-vozbudimyh-tkanej",
+          "title": "Физиология возбудимых тканей",
+          "shortTitle": "Физиология возбудимых тканей",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-fiziologii-tsentralnoj-nervnoj-sistemy",
+          "title": "Интенсив по физиологии центральной нервной системы",
+          "shortTitle": "Интенсив по физиологии центральной нервной системы",
+          "price": 0
+        },
+        {
+          "slug": "fiziologiya-pishchevaritelnoj-sistemy",
+          "title": "Физиология пищеварительной системы",
+          "shortTitle": "Физиология пищеварительной системы",
+          "price": 0
+        },
+        {
+          "slug": "fiziologiya-serdechno-sosudistoj-sistemy",
+          "title": "Физиология сердечно-сосудистой системы",
+          "shortTitle": "Физиология сердечно-сосудистой системы",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "biohimiya",
+      "title": "Биохимия",
+      "courses": [
+        {
+          "slug": "ehnzimologiya",
+          "title": "Энзимология",
+          "shortTitle": "Энзимология",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-azotistomu-obmenu",
+          "title": "Интенсив по азотистому обмену",
+          "shortTitle": "Интенсив по азотистому обмену",
+          "price": 0
+        },
+        {
+          "slug": "nutriomika",
+          "title": "Нутриомика",
+          "shortTitle": "Нутриомика",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-po-uglevodnomu-i-ehnergeticheskomu-obmenu",
+          "title": "Интенсив по углеводному и энергетическому обмену",
+          "shortTitle": "Интенсив по углеводному и энергетическому обмену",
+          "price": 0
+        },
+        {
+          "slug": "uglevodnyj-i-ehnergeticheskij-obmen-2-0",
+          "title": "Углеводный и энергетический обмен 2.0",
+          "shortTitle": "Углеводный и энергетический обмен 2.0",
+          "price": 0
+        },
+        {
+          "slug": "lipidnyj-obmen",
+          "title": "Липидный обмен",
+          "shortTitle": "Липидный обмен",
+          "price": 0
+        },
+        {
+          "slug": "gormonalnaya-regulyatsiya-metabolizma",
+          "title": "Гормональная регуляция метаболизма",
+          "shortTitle": "Гормональная регуляция метаболизма",
+          "price": 0
+        },
+        {
+          "slug": "osobennosti-metabolizma-v-raznyh-tkanyah",
+          "title": "Особенности метаболизма в разных тканях",
+          "shortTitle": "Особенности метаболизма в разных тканях",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "patologicheskaya-anatomiya",
+      "title": "Патологическая анатомия",
+      "courses": [
+        {
+          "slug": "intensiv-vnutrikletochnye-nakopleniya",
+          "title": "Интенсив Внутриклеточные накопления",
+          "shortTitle": "Интенсив Внутриклеточные накопления",
+          "price": 0
+        },
+        {
+          "slug": "patologiya-sistemy-krovi",
+          "title": "Патология системы крови",
+          "shortTitle": "Патология системы крови",
+          "price": 0
+        },
+        {
+          "slug": "patologiya-mochevydelitelnoj-sistemy",
+          "title": "Патология мочевыделительной системы",
+          "shortTitle": "Патология мочевыделительной системы",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "patofiziologiya",
+      "title": "Патологическая физиология",
+      "courses": [
+        {
+          "slug": "patologiya-i-povrezhdenie-kletki",
+          "title": "Патология и повреждение клетки",
+          "shortTitle": "Патология и повреждение клетки",
+          "price": 0
+        },
+        {
+          "slug": "patologiya-vospaleniya",
+          "title": "Патология воспаления",
+          "shortTitle": "Патология воспаления",
+          "price": 0
+        },
+        {
+          "slug": "narusheniya-teplovogo-obmena",
+          "title": "Нарушения теплового обмена",
+          "shortTitle": "Нарушения теплового обмена",
+          "price": 0
+        },
+        {
+          "slug": "narusheniya-kislotno-shchelochnogo-ravnovesiya",
+          "title": "Нарушения кислотно-щелочного равновесия",
+          "shortTitle": "Нарушения кислотно-щелочного равновесия",
+          "price": 0
+        },
+        {
+          "slug": "patofiziologiya-immunnoj-sistemy",
+          "title": "Патофизиология иммунной системы",
+          "shortTitle": "Патофизиология иммунной системы",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-patofiziologiya-krovi",
+          "title": "Интенсив Патофизиология крови",
+          "shortTitle": "Интенсив Патофизиология крови",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "farmakologiya",
+      "title": "Фармакология",
+      "courses": [
+        {
+          "slug": "preparaty-dejstvuyushchie-na-pns",
+          "title": "Препараты, действующие на ПНС",
+          "shortTitle": "Препараты, действующие на ПНС",
+          "price": 0
+        },
+        {
+          "slug": "preparaty-vliyayushchie-na-tsns",
+          "title": "Препараты, влияющие на ЦНС",
+          "shortTitle": "Препараты, влияющие на ЦНС",
+          "price": 0
+        },
+        {
+          "slug": "preparaty-dlya-lecheniya-serdechno-sosudistyh-zabolevanij",
+          "title": "Препараты для лечения сердечно-сосудистых заболеваний",
+          "shortTitle": "Препараты для лечения сердечно-сосудистых заболеваний",
+          "price": 0
+        },
+        {
+          "slug": "preparaty-dlya-lecheniya-ehndokrinnyh-zabolevanij",
+          "title": "Препараты для лечения эндокринных заболеваний",
+          "shortTitle": "Препараты для лечения эндокринных заболеваний",
+          "price": 0
+        },
+        {
+          "slug": "sredstva-vliyayushchie-na-immunitet-npvs-gks",
+          "title": "Средства, влияющие на иммунитет. НПВС. ГКС",
+          "shortTitle": "Средства, влияющие на иммунитет. НПВС. ГКС",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-preparaty-dlya-razlichnyh-sistem",
+          "title": "Интенсив Препараты для различных систем",
+          "shortTitle": "Интенсив Препараты для различных систем",
+          "price": 0
+        },
+        {
+          "slug": "himioterapevticheskie-preparaty",
+          "title": "Химиотерапевтические препараты",
+          "shortTitle": "Химиотерапевтические препараты",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "propedevtika-vnutrennih-boleznej",
+      "title": "Пропедевтика внутренних болезней",
+      "courses": [
+        {
+          "slug": "obshchie-ponyatiya-propedevtiki",
+          "title": "Общие понятия пропедевтики",
+          "shortTitle": "Общие понятия пропедевтики",
+          "price": 0
+        },
+        {
+          "slug": "propedevtika-pishchevaritelnoj-sistemy",
+          "title": "Пропедевтика пищеварительной системы",
+          "shortTitle": "Пропедевтика пищеварительной системы",
+          "price": 0
+        },
+        {
+          "slug": "propedevtika-dyhatelnoj-sistemy",
+          "title": "Пропедевтика дыхательной системы",
+          "shortTitle": "Пропедевтика дыхательной системы",
+          "price": 0
+        },
+        {
+          "slug": "propedevtika-mochepolovoj-sistemy",
+          "title": "Пропедевтика мочеполовой системы",
+          "shortTitle": "Пропедевтика мочеполовой системы",
+          "price": 0
+        },
+        {
+          "slug": "intensiv-ehkg",
+          "title": "Интенсив ЭКГ",
+          "shortTitle": "Интенсив ЭКГ",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "hirurgiya",
+      "title": "Хирургия",
+      "courses": [
+        {
+          "slug": "obshchaya-hirurgiya",
+          "title": "Общая хирургия",
+          "shortTitle": "Общая хирургия",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "nevrologiya",
+      "title": "Неврология",
+      "courses": [
+        {
+          "slug": "dvigatelnye-narusheniya",
+          "title": "Двигательные нарушения",
+          "shortTitle": "Двигательные нарушения",
+          "price": 0
+        },
+        {
+          "slug": "onmk-i-pnmk",
+          "title": "ОНМК и ПНМК",
+          "shortTitle": "ОНМК и ПНМК",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "slug": "luchevaya-diagnostika",
+      "title": "Лучевая диагностика",
+      "courses": [
+        {
+          "slug": "luchevaya-diagnostika",
+          "title": "Лучевая диагностика",
+          "shortTitle": "Лучевая диагностика",
+          "price": 0
+        }
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "slug": "lazareva-elena-konstantinovna",
+      "name": "Елена Лазарева",
+      "homeRoleText": "Основатель школы, преподаватель анатомии, врач-уролог",
+      "cutoutKey": "demo-author-6"
+    },
+    {
+      "slug": "lagutin-nikita",
+      "name": "Никита Лагутин",
+      "homeRoleText": "Преподаватель гистологии, врач-патологоанатом, ординатор-акушер-гинеколог",
+      "cutoutKey": "demo-author-12"
+    },
+    {
+      "slug": "belyaeva-juliya",
+      "name": "Юлия Беляева",
+      "homeRoleText": "Преподаватель биохимии, биолог, к.б.н.",
+      "cutoutKey": "demo-author-14"
+    },
+    {
+      "slug": "ehngel-milana",
+      "name": "Милана Зубова",
+      "homeRoleText": "Преподаватель латыни",
+      "cutoutKey": "demo-author-11"
+    },
+    {
+      "slug": "litovchenko-ekaterina",
+      "name": "Екатерина Литовченко",
+      "homeRoleText": "Преподаватель фармакологии, врач-лечебник",
+      "cutoutKey": "demo-author-5"
+    },
+    {
+      "slug": "abalmasova-yuliya-mihajlovna",
+      "name": "Юлия Абалмасова",
+      "homeRoleText": "Преподаватель лучевой диагностики, врач-рентгенолог",
+      "cutoutKey": "demo-author-13"
+    },
+    {
+      "slug": "dmitriy-nikolaev",
+      "name": "Дмитрий Николаев",
+      "homeRoleText": "Преподаватель хирургии, врач-хирург",
+      "cutoutKey": "demo-author-3"
+    },
+    {
+      "slug": "kseniya-lushnikova",
+      "name": "Ксения Лушникова",
+      "homeRoleText": "Преподаватель невролог, ординатор-невролог",
+      "cutoutKey": "demo-author-7"
+    }
+  ],
+  "reviews": [
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=958",
+      "displayName": "Ангелина",
+      "text": "Решила поступать в медицинский вуз\nпосле колледжа по ВИ, один из\nэкзаменов-анатомия, начала\nготовиться, но знаний из колледжа\nнедостаточно\nВ открытых источниках много информации, но она не\nструктурирована, бездумно читать учебники-не выход, посмотрела много пробных уроков в разных онлайн- школах, ваша попала в топ любимок, потому что:\n1. Можно покупать маленькими блоками, а не всё разом\n2. Есть конспекты и домашки\n3. Очень эстетичные красивые видео, приятно смотреть и слушать+сама платформа удобная, это не какие-то там видео в ВК/тг или яндекс-диске Сейчас прохожу остеологию, дальше буду по списку покупать всё остальное Результат продемонстрировать пока не могу, кроме как исписанной\nтетрадки, но надеюсь, что в\nследующем году смогу сказать\n«экзамен сдан, меня зачислили!»",
+      "reviewWrittenAt": "2026-10-29T00:00:00+00:00",
+      "photo": "review-1.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": "osteologiya"
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=956",
+      "displayName": "Поля",
+      "text": "Я преобрела курс: «интенсив по Центральной и\nпереферической нервной системе».\nЯ решила купить этот курс, потому что в будущем хочу связать свою жизнь с неврологией и очень хотелось\nпобольше узнать об этом.\nОчень понравились развернутые конспекты с вебинарами. Я лучше запоминаю, когда мне рассказывают, поэтому это было очень полезно.\nРезультат увидим на первом коллоквиуме, а так очень интересно. Пока что очень нравится ЦНС. Самый любимый раздел из всех пройденных в анатомии.",
+      "reviewWrittenAt": "2026-10-21T00:00:00+00:00",
+      "photo": "review-2.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": "intensiv-po-tsentralnoj-nervnoj-sisteme"
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=955",
+      "displayName": "Анастасия Хомукова",
+      "text": "Я покупала анатомию весь курс для того, чтобы расширенно и углубленно изучать эту дисциплину. Хочется отметить юмор, который был на уроках, было очень интересно и позновательно, знаю, что еще вернусь к этому курсу для других дисциплин. Все прошло замечательно и отлично! Рекомендую\n16 сен в 10:54",
+      "reviewWrittenAt": "2026-09-16T00:00:00+00:00",
+      "photo": "review-3.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=893",
+      "displayName": "ау лол",
+      "text": "Я покупала темы по курсу общей гистологии, решила купить потому что нашей группе достался достаточно тяжелый преподаватель, а кафедральный учебник был очень плохо структурирован, в нем много лишней информации и не хватает нужной, а разобраться в теме сильно хотелось, поэтому решила взять ваши курсы Больше всего понравилось что объясняются моменты физиологии, из-за чего значительно понятнее функции ткани, морфология. Много удобных и понятных схем, конспекты классно структурированы. А результат, за два коллоквиума по общей гистологии у меня пятерки",
+      "reviewWrittenAt": "2026-06-01T00:00:00+00:00",
+      "photo": "review-4.webp",
+      "subjectSlug": "gistologiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=838",
+      "displayName": "Татьяна Марфенко",
+      "text": "Брала несколько курсов по гистологии: пищеварительная система, кроветворение, общая гистология, мужская половая система. Биохимия: витамины, общее. Потому что очень давно наслышана и мои знакомые друзья-медики как-то показывали мне один из ваших конспектов — и это было бесподобно. И суть именно в удобстве, цветовой гамме, а также в картинках заболеваний, которые сразу запоминаются. Отдельное спасибо большое хочу сказать по предметам: биохимия. Просто не могу передать словами, как вам благодарна. Я смогла понять биохимию, не читав учебники, потому что ваши труды стали основой, на которой я училась. Гистология. Как бывает, во время учебы приходится выбрать один предмет, на который ты не обращаешь внимание. Так как учусь в медицинском центре, где у нас на 2 курсе зимней сессии сдаются 4 экзамена: анатомия, гистология, биохимия, физиология. И из всех пришлось жертвовать гистологией, и я её вообще не знала, даже общую. Как же меня спасли ваши конспекты и видеоуроки... Это было так интересно, четко, и была та самая структура! Очень-очень вам благодарна",
+      "reviewWrittenAt": "2026-02-06T00:00:00+00:00",
+      "photo": "review-5.webp",
+      "subjectSlug": "gistologiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=862",
+      "displayName": "Арина Касьянова",
+      "text": "Я приобрела два курса: 1. «Препараты, влияющие на ЦНС». 2. «Препараты для лечения ССЗ Основной причиной стал предстоящий экзамен по психиатрии. В экзаменационных вопросах был целый раздел, посвященный фармакотерапии психических расстройств. Мне нужно было быстро и системно разобраться в огромном массиве информации: механизмах действия, показаниях, побочных эффектах и особенностях применения этих препаратов . Курс «Препараты для лечения ССЗ» я приобрела «заодно», на перспективу, на момент покупки я его детально не изучала) Больше всего хочется отметить: Безупречная структура и систематизация. Это главный плюс. Сложный материал был разложен по полочкам. Наглядные и информативные таблицы. Они стали для меня основным инструментом для повторения и сравнения. В таблицах были наглядно выделены ключевые отличия между препаратами одной группы, их профиль побочных эффектов, основные показания. Это сэкономило огромное количество времени, которое я бы потратила на составление таких таблиц самостоятельно. Понятное объяснение сложных механизмов. Главным результатом стала полученная сегодня оценка 5 на экзамене по психиатрии!!!! Курс «Препараты, влияющие на ЦНС» стал моим основным пособием при подготовке к соответствующему разделу. Курс по ССЗ ждет своей очереди, и после такого позитивного опыта я уверена, что он поможет так же эффективно разобраться в кардиологической фармакологии) Хочу выразить огромную благодарность CHRISTMEDSCHOOL за качественный продукт!",
+      "reviewWrittenAt": "2026-01-21T00:00:00+00:00",
+      "photo": "review-6.webp",
+      "subjectSlug": "farmakologiya",
+      "courseSlug": "preparaty-vliyayushchie-na-tsns"
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=864",
+      "displayName": "Виктория Андреева",
+      "text": "Здравствуйте,я приобрела курс по общей хирургии,чтобы подготовится к зачету.Курс очень помог.Мне очень понравились структурированные конспекты ,по которым очень удобно повторять материал.Преподаватель интересно и без воды все рассказывает.Зачет сдан на 5)))",
+      "reviewWrittenAt": "2025-11-07T00:00:00+00:00",
+      "photo": "review-7.webp",
+      "subjectSlug": "hirurgiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=866",
+      "displayName": "Мария Шнайдер",
+      "text": "Приобретала курс по артрологии. На просторах интернета нет полных материалов для изучения этого раздела,а тем более видео где все показано,поэтому не сомневаясь ,я купила курс по артрологии именно в этой онлайн школе,потому что педагоги очень качественно подходят к материалам и к своим ученикам. Очень понравились красочные и информативные конспекты,по которым легко все учить, а также объяснение Елены и ее техники запоминания. Благодаря курсу я смогла качественно выучить артрологию!",
+      "reviewWrittenAt": "2025-10-27T00:00:00+00:00",
+      "photo": "review-8.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": "artrologiya"
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=897",
+      "displayName": "Мария Осипенко",
+      "text": "Для того чтобы выучить анатомию ее нужно полюбить,для того чтобы ее полюбить ,ее нужно грамотно и интересно преподать!) Я очень благодарна преподавателю анатомии Chrestovskaya medical school Елене Лазоревой,она научила меня любить анатомию💞так же мне очень помогают в обучении конспекты,я практически не пользуюсь учебником,домашнее задание всегда выполняется легко после таких лекций! Ну а за практики по анатомии у меня всегда 5! Последний курс который я покупала гистология ССС (на тот момент когда я покупала полный курс по гистологии ССС еще не было, я докупила). Курс отличный очень поправился,хорошие конспекты и самое главное хорошие гистологические препараты ,коллоквиум сдала на 5 спасибо 🙏",
+      "reviewWrittenAt": "2025-10-24T00:00:00+00:00",
+      "photo": "review-9.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=869",
+      "displayName": "Виктор Сергеевич",
+      "text": "Приобрел практически весь блок по фармакологии. На носу экзамены в меде, но информ. дают мало. Курс все раскладывает по полочкам, много становиться понятно. пока изучаю антибиотики, нравиться как преподносят знания, мненмоники . Это реально помогает.",
+      "reviewWrittenAt": "2025-10-13T00:00:00+00:00",
+      "photo": "review-10.webp",
+      "subjectSlug": "farmakologiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=872",
+      "displayName": "Аня Рычкова",
+      "text": "Приобрела интенсив по анатомии по ЦНС и ПНС. Нравится, что информация излагается доступно и понятно, а на вебинарах наглядно все показывается на картинках , которые помогают быстрее усвоить информацию)",
+      "reviewWrittenAt": "2025-09-15T00:00:00+00:00",
+      "photo": "review-11.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=823",
+      "displayName": "Вика Перфильева",
+      "text": "Не выразить словами всю свою благодарность, потому что это невероятно полезная школа! Преподаватели объясняют все четко, понятно, а главное интересно. Конспекты тоже супер понятные, структурированные и емкие. Очень красочные, так учиться комфортнее. И сразу же практика в виде домашнего задания, тоже очень удобно! Однозначно рекомендую приобретать курсы. Учеба станет в разы интереснее, как у меня)",
+      "reviewWrittenAt": "2025-08-25T00:00:00+00:00",
+      "photo": "review-12.webp",
+      "subjectSlug": null,
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=898",
+      "displayName": "Полина Егорова",
+      "text": "Курсы Елены Лазаревой, - это нечто! Безумно подробные виде-материалы, максимально отмечаю конспекты к урокам, - это для меня очень важно. Они составлены красиво, схематично, с абсолютно всеми деталями и картинками! Я искренне советую курсы Christovskaya Medical School, потому что такого компактного и насыщенного материала больше не найти (а я долго искала). Также отмечаю отдельно возможность задать любой вопрос и уточнить интересующий момент. Елена настоящий профессионал, который вкладывается в создание курсов на все 100. Очень помогает при подготовке к экзаменам и зачетам. Сейчас проходу нервную систему, и я реально ее полюбила. Спасибо за это!",
+      "reviewWrittenAt": "2025-05-29T00:00:00+00:00",
+      "photo": "review-13.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=877",
+      "displayName": "Aysel Velieva",
+      "text": "Курс по анатомии просто пушка Вообще не понимала ангиологию , но благодаря чудесному преподавателю поняла Она объясняет простым языком очень сложный материал, поймет любой даже школьник Красочные конспекты просто восторг , ничего учить не приходится , сразу в голове все остается",
+      "reviewWrittenAt": "2025-05-07T00:00:00+00:00",
+      "photo": "review-14.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=859",
+      "displayName": "Ира Онегина",
+      "text": "Замечательная онлайн-школа! Узнала о ней еще во время учебы в колледже, когда искала информацию по анатомии. Теперь, будучи в вузе, сразу вспомнила о ней. Информация в видео понятна, при этом как теория, так и клинические случаи позволяют дать достаточно объемный ответ на семинарах. Хорошие оценки и похвала от жесткого препода — показатель качества курса и простоты его восприятия. Уверена, блоки по другим предметам на том же уровне. Обязательно вернусь еще",
+      "reviewWrittenAt": "2025-04-02T00:00:00+00:00",
+      "photo": "review-15.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=881",
+      "displayName": "Софья Боровкова",
+      "text": "Здравствуйте! Очень хороший подарочек :) Мне пока все нравится, Ваша школа как раз и известна приятным оформлением и хорошей подачей. У нас в ВУЗе химия проходит стрессово, а здесь все легко рассказывается и быстро запоминается",
+      "reviewWrittenAt": "2025-03-31T00:00:00+00:00",
+      "photo": "review-16.webp",
+      "subjectSlug": "bioorganicheskaya-himiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=895",
+      "displayName": "Наталья Девликанова",
+      "text": "Эти курсы — это настоящая находка! Особенно хочется выделить курсы по анатомии, гистологии и биохимии. Материал подается очень структурированно и доступно, что помогает легко усваивать даже сложные темы. Преподаватели — настоящие профессионалы, которые не только знают свой предмет на отлично, но и умеют заинтересовать. Анатомия стала понятной и увлекательной, гистология перестала казаться чем-то абстрактным, а биохимия, наконец, обрела логику. Очень рекомендую эти курсы всем, кто хочет углубить свои знания и чувствовать себя уверенно в учебе!",
+      "reviewWrittenAt": "2025-01-18T00:00:00+00:00",
+      "photo": "review-17.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": null
+    },
+    {
+      "sourcePage": "https://staging.christmedschool.com/reviews?review=797",
+      "displayName": "Екатерина Д",
+      "text": "Я купила почти все курсы по анатомии, так как объяснения Лены просто шикарны! Только благодаря им смогла разобраться в анатомии! У нас был очень строгий преподаватель, которому было очень важно, чтобы мы интересовались дополнительной информацией, а на уроках в школе было очень много разных интересных фактов. Конспекты до сих пор использую на других предметах, например на топке, очень выручают. Очень зашли объяснения с использованием 3D-визуализации различных анатомических структур. Если у вас проблемы с анатомией — вам сюда, от души советую",
+      "reviewWrittenAt": "2024-12-21T00:00:00+00:00",
+      "photo": "review-18.webp",
+      "subjectSlug": "anatomiya",
+      "courseSlug": null
+    }
+  ],
+  "faqs": [
+    {
+      "slug": "payment-methods",
+      "question": "Как я могу оплатить курс?",
+      "answer": "Мы принимаем оплату картами российских и зарубежных банков. Для граждан РФ доступна беспроцентная рассрочка через Долями и Подели. Если оплата не проходит, напишите в поддержку.",
+      "category": {
+        "slug": "payments",
+        "title": "Оплата"
+      }
+    },
+    {
+      "slug": "learning-platform",
+      "question": "Как работает платформа для обучения?",
+      "answer": "После подтверждения оплаты курс появляется в личном кабинете. Уроки, материалы и доступ к обучению собраны в одном месте.",
+      "category": {
+        "slug": "learning",
+        "title": "Обучение"
+      }
+    },
+    {
+      "slug": "where-to-buy-course",
+      "question": "Где, как и по какой цене я могу купить курс?",
+      "answer": "Купить курс можно на сайте. Актуальная цена показывается на странице курса и в корзине перед оплатой.",
+      "category": {
+        "slug": "payments",
+        "title": "Оплата"
+      }
+    },
+    {
+      "slug": "course-access-period",
+      "question": "За какое время мне нужно посмотреть все уроки?",
+      "answer": "Срок доступа зависит от конкретного курса. Мы показываем его до оплаты и в личном кабинете после покупки.",
+      "category": {
+        "slug": "access",
+        "title": "Доступ"
+      }
+    },
+    {
+      "slug": "save-materials",
+      "question": "Я могу сохранить материалы себе?",
+      "answer": "Материалы доступны внутри платформы. Если к курсу приложены файлы для скачивания, они будут видны в уроках.",
+      "category": {
+        "slug": "materials",
+        "title": "Материалы"
+      }
+    },
+    {
+      "slug": "paid-no-access-yet",
+      "question": "Оплатил(а) курс 2 минуты назад, но ничего нет?",
+      "answer": "Иногда подтверждение оплаты занимает несколько минут. Если доступ не появился, напишите в поддержку школы.",
+      "category": {
+        "slug": "support",
+        "title": "Поддержка"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/d823e939-40c4-4dd8-9bf9-895377ca5e8c.webp",
+      "path": "backend/database/demo-media/review-1.webp",
+      "purpose": "public review avatar",
+      "sha256": "817a7e3a0c922f5bb8a93c3bf102e7e26b3019c16a5f511c8a8ff5d3ea2b9d8e",
+      "bytes": 5524
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/78f120a6-d68b-435c-a6f7-6250a5a402a8.webp",
+      "path": "backend/database/demo-media/review-10.webp",
+      "purpose": "public review avatar",
+      "sha256": "c5006fa1da171d36d15f3a1ebe6f03cee6d6234f26affe0b48ba3bce2ab777f4",
+      "bytes": 11668
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/75b42228-868f-40d9-bf03-74270c312f22.webp",
+      "path": "backend/database/demo-media/review-11.webp",
+      "purpose": "public review avatar",
+      "sha256": "5a566a48d46846e26e0647913be50c9f798a8753cc1735e3f30c8ad241fdb5e6",
+      "bytes": 4720
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/1a42e7a4-0a4c-4c67-bb49-357788d416b0.webp",
+      "path": "backend/database/demo-media/review-12.webp",
+      "purpose": "public review avatar",
+      "sha256": "27efd1ec152cf0e18019301a7b6b6a410ff9ced5cbf3a44e62728063ad76177f",
+      "bytes": 1600
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/1161d5da-696e-4b1f-bd83-785d9265841e.webp",
+      "path": "backend/database/demo-media/review-13.webp",
+      "purpose": "public review avatar",
+      "sha256": "6e17b2b093b76a0e5797e1c509d76661bb5407b3fdb5496df9d33a5b69a34cf5",
+      "bytes": 6618
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/e779cf9f-a6fe-4860-833d-be7d7f2acd51.webp",
+      "path": "backend/database/demo-media/review-14.webp",
+      "purpose": "public review avatar",
+      "sha256": "180488990ea812b44289c8caced17ffe23c28aa3cfb084517d1df613990753e3",
+      "bytes": 3842
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/76e8c214-5c4e-4c11-b63c-df0bae16dac2.webp",
+      "path": "backend/database/demo-media/review-15.webp",
+      "purpose": "public review avatar",
+      "sha256": "066998f7a00123a50fe954769285b4c081410b67cf1746f6472ad6ba9dc4fa46",
+      "bytes": 4766
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/651cd7d4-c63a-470b-8a32-0b833475dc31.webp",
+      "path": "backend/database/demo-media/review-16.webp",
+      "purpose": "public review avatar",
+      "sha256": "c8b033149f720ecce90888be21787a092739c27b79248887801a5710fea11d4d",
+      "bytes": 8906
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/93b8025a-3af1-4285-81a7-8783eb7044b9.webp",
+      "path": "backend/database/demo-media/review-17.webp",
+      "purpose": "public review avatar",
+      "sha256": "3d1f3b8246e25eb0fc99f2e9afe20fec7867983ad10d64f919d869923728ae72",
+      "bytes": 1108
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/4602d92c-220d-403b-9a06-e838e23d3763.webp",
+      "path": "backend/database/demo-media/review-18.webp",
+      "purpose": "public review avatar",
+      "sha256": "e048e40fbd2bbecf4712b429523a13a9a915299aa305f577ef4213edec32e9e2",
+      "bytes": 5994
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/aadcb31f-3bee-4df3-92c5-c09477bb69f3.webp",
+      "path": "backend/database/demo-media/review-2.webp",
+      "purpose": "public review avatar",
+      "sha256": "4d37a55cde6fc0417c9b6803ed63bba098764cc0bc14015bbbaa8e17b5c74fcd",
+      "bytes": 5262
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/2f524ce0-c373-4bd3-98c4-38e3936f418e.webp",
+      "path": "backend/database/demo-media/review-3.webp",
+      "purpose": "public review avatar",
+      "sha256": "49925641c752e0f328d40ea2ff471efd40103cbabd8b1b2d662b5f771d2d67d0",
+      "bytes": 4400
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/0df24c8d-f64c-489a-89ee-dde539189e23.webp",
+      "path": "backend/database/demo-media/review-4.webp",
+      "purpose": "public review avatar",
+      "sha256": "49afb58a4745a1a9a6458a1ac83fd52565514e9a5da3a8dd97d7e8a94000cb98",
+      "bytes": 7880
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/47b789a8-8452-4415-9b3c-e1e219fc7671.webp",
+      "path": "backend/database/demo-media/review-5.webp",
+      "purpose": "public review avatar",
+      "sha256": "62d74cec51a0ed71dabf47558d3ef74ee3d8ea8cae0cc211255c3e5d74c0ffd6",
+      "bytes": 4276
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/4ebfacfd-4015-4349-97f6-ac34de0bf1bd.webp",
+      "path": "backend/database/demo-media/review-6.webp",
+      "purpose": "public review avatar",
+      "sha256": "e82793b808d0b4caff8ea98645f5e869919543af5ebf95e84113cb52e2cba39f",
+      "bytes": 6392
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/9a1cfd14-a308-4a49-b3f9-89ec47bee016.webp",
+      "path": "backend/database/demo-media/review-7.webp",
+      "purpose": "public review avatar",
+      "sha256": "b4ad57627857716d7e19215f253102a5ad24df36ded0f19e0a1913774eeb07cf",
+      "bytes": 4788
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/f595f44b-9bff-4991-89e3-0961c87b9939.webp",
+      "path": "backend/database/demo-media/review-8.webp",
+      "purpose": "public review avatar",
+      "sha256": "3e07f6ab6dfde55f00bbdcaff0af0a21a2d6338dbb29447e8ab4a69a345014a0",
+      "bytes": 4724
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/review-authors/25c38f17-f962-4a33-b65a-9297b4ff30f4.webp",
+      "path": "backend/database/demo-media/review-9.webp",
+      "purpose": "public review avatar",
+      "sha256": "5c0ced1bc649c74c26b0003628f3a3202ff6fe863eba671c35c71747dc8c1aa4",
+      "bytes": 2344
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/brand/christmedschool-graduation-cap.svg",
+      "path": "frontend/public/images/brand/christmedschool-graduation-cap.svg",
+      "purpose": "homepage image",
+      "sha256": "f0722bc1628e5f97b7ad590424e76975e14ca460315c9dc1f19dd8a93448a365",
+      "bytes": 428
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/brands/yandex-classic-red-white.svg",
+      "path": "frontend/public/images/brands/yandex-classic-red-white.svg",
+      "purpose": "homepage image",
+      "sha256": "fe6062e55100f622020fb9d010575384574646f9836ded90fa5d00e454ebc0c5",
+      "bytes": 2189
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/home/comparison/academic-desktop-safe-v3.png",
+      "path": "frontend/public/images/home/comparison/academic-desktop-safe-v3.png",
+      "purpose": "homepage image",
+      "sha256": "20a6b68529f1552e14f8fb81fa32f509f59ca695ff79c04e6dd4c80b6e33c2cb",
+      "bytes": 1074840
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/home/comparison/school-desktop-safe-v3.png",
+      "path": "frontend/public/images/home/comparison/school-desktop-safe-v3.png",
+      "purpose": "homepage image",
+      "sha256": "6d4b659c4d149a826a91e34cb97981688b9a485bf23e3f5274da0f9e1e70c88d",
+      "bytes": 679418
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/home/license/license-page-1.webp",
+      "path": "frontend/public/images/home/license/license-page-1.webp",
+      "purpose": "homepage static poster or license image",
+      "sha256": "c0ebe99b6aba30304e559c475c2476181ea424861ce301441f6b5e0f5777760e",
+      "bytes": 100544
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/home/license/license-page-2.webp",
+      "path": "frontend/public/images/home/license/license-page-2.webp",
+      "purpose": "homepage static poster or license image",
+      "sha256": "ab65c7baedea9a681fbd7579d49d250b202d203b4a06a11beb8faa9b141f231c",
+      "bytes": 122368
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/home/license/license-preview.webp",
+      "path": "frontend/public/images/home/license/license-preview.webp",
+      "purpose": "homepage image",
+      "sha256": "f4d6108e95f6d1e3d00476530a3efaf0d84bc928bb83a0118fb39ebc5845800d",
+      "bytes": 64202
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-1.avif",
+      "path": "frontend/public/images/v2/hero-cards/icon-1.avif",
+      "purpose": "homepage image",
+      "sha256": "64419b88171750dfdf4d6b240e210f97b42e5cd571804655be6687d5793019e4",
+      "bytes": 12320
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-1.webp",
+      "path": "frontend/public/images/v2/hero-cards/icon-1.webp",
+      "purpose": "homepage image",
+      "sha256": "2c6ad2cc113765b610e9a1454529c9a8f72f29194c83903d0710f96c27e9be1b",
+      "bytes": 16022
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-2.avif",
+      "path": "frontend/public/images/v2/hero-cards/icon-2.avif",
+      "purpose": "homepage image",
+      "sha256": "1e291de00f6dd43d560b73e2ce84e225214eb0459370c967242ca4d33da059ed",
+      "bytes": 11553
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-2.webp",
+      "path": "frontend/public/images/v2/hero-cards/icon-2.webp",
+      "purpose": "homepage image",
+      "sha256": "55679f0249c1c48e008414b36f4cd9e6c85d6dc5e60d335389a443845683ea2e",
+      "bytes": 23510
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-3.avif",
+      "path": "frontend/public/images/v2/hero-cards/icon-3.avif",
+      "purpose": "homepage image",
+      "sha256": "da9f0cbfc3abfd240e043a29406648e47cc20813aa04cee33f34750a3e8cf5cd",
+      "bytes": 20280
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-3.webp",
+      "path": "frontend/public/images/v2/hero-cards/icon-3.webp",
+      "purpose": "homepage image",
+      "sha256": "ac2649b1922472342acae93474f422b2054c30d1a4f0cadf0b8d8b5c9d2e0bdf",
+      "bytes": 36176
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-4.avif",
+      "path": "frontend/public/images/v2/hero-cards/icon-4.avif",
+      "purpose": "homepage image",
+      "sha256": "c6b1483d6b0605cd691abdaf87cd00d7848f1d76269bf0fd18621e7c1b633c6a",
+      "bytes": 12523
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-4.webp",
+      "path": "frontend/public/images/v2/hero-cards/icon-4.webp",
+      "purpose": "homepage image",
+      "sha256": "4ce9bf2a54deeff902ddb13177af14b8f05499d610930229a4881715aa727ebc",
+      "bytes": 19106
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-5.avif",
+      "path": "frontend/public/images/v2/hero-cards/icon-5.avif",
+      "purpose": "homepage image",
+      "sha256": "b8831877b21544fd6a1deed098230f0a046804d2bc6a10b924b39a21c249f56e",
+      "bytes": 5057
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/icon-5.webp",
+      "path": "frontend/public/images/v2/hero-cards/icon-5.webp",
+      "purpose": "homepage image",
+      "sha256": "82e2718422f1e7d2dacb9b454782941442b53e6c68433eb87b2bf1ba65f6db7f",
+      "bytes": 5098
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/1-352x340.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/1-352x340.avif",
+      "purpose": "homepage image",
+      "sha256": "97e3df6919c067a1a80790ac9835741f11ef66186d79ba3209400522c1acca7f",
+      "bytes": 11181
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/1-352x340.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/1-352x340.webp",
+      "purpose": "homepage image",
+      "sha256": "a4c4e83bea1add2e42697a19510c8966f89392b28fe9b7f10d29d32e6b821150",
+      "bytes": 12772
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/1-672x649.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/1-672x649.avif",
+      "purpose": "homepage image",
+      "sha256": "131c8ea7cc9f3ed805f711ff1aebea1b7d974ba9c33817bcc2c3ce46fe2e576e",
+      "bytes": 29765
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/1-672x649.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/1-672x649.webp",
+      "purpose": "homepage image",
+      "sha256": "b020dd130968239b70595af782f8fb4c47d165d463fb2c2ad5ba5d53f88f9112",
+      "bytes": 34458
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/2-480x448.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/2-480x448.avif",
+      "purpose": "homepage image",
+      "sha256": "dfa5994b8245616f91d0f34757128b1a6e40e9d27bc4c230377c13fa47848900",
+      "bytes": 14471
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/2-480x448.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/2-480x448.webp",
+      "purpose": "homepage image",
+      "sha256": "237be4cbca7cacd680da5bf61f4c45c9820618254feb204861fa994c50984fa5",
+      "bytes": 17286
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/2-960x896.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/2-960x896.avif",
+      "purpose": "homepage image",
+      "sha256": "19105b6ce1b7db41ea9cbc32fa75890067f312d0f036ef3e5bd18db115d8bb25",
+      "bytes": 45040
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/2-960x896.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/2-960x896.webp",
+      "purpose": "homepage image",
+      "sha256": "b918eea365b4ae1e763eb32524b25500f9d21bd0ceb4c1dce71c5393f0a7a96d",
+      "bytes": 51746
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/3-320x318.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/3-320x318.avif",
+      "purpose": "homepage image",
+      "sha256": "816f7e456a8b9e5ebfc9d59c45207e1a4229f76526098ad52c3a9e6e72d55475",
+      "bytes": 15023
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/3-320x318.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/3-320x318.webp",
+      "purpose": "homepage image",
+      "sha256": "8400d3b6177cc4eb57c05e97f352d22d3a53a21dc27f80af36aefc30396c0231",
+      "bytes": 26592
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/3-608x605.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/3-608x605.avif",
+      "purpose": "homepage image",
+      "sha256": "b2411aa02d0cca5cdf68d758a9295cb7aee6808571ea5155592211e3a7cd7df1",
+      "bytes": 46677
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/3-608x605.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/3-608x605.webp",
+      "purpose": "homepage image",
+      "sha256": "b5b87fab86441c72673cdf0eb40ab67480f1abcae9af67ff4ebefcaaa4e12221",
+      "bytes": 85254
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/4-256x229.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/4-256x229.avif",
+      "purpose": "homepage image",
+      "sha256": "d0306c3134e2c1e699578baba11babb2d33719c5b94e9fe7a9c7e31a9f22f58f",
+      "bytes": 6192
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/4-256x229.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/4-256x229.webp",
+      "purpose": "homepage image",
+      "sha256": "7fc3b4852ad99ecc19e23cde3d16ecc0a24663a47fadbd438bc8635349bfae00",
+      "bytes": 7586
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/4-480x430.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/4-480x430.avif",
+      "purpose": "homepage image",
+      "sha256": "53c3aa9c54a355da8b23e199daba0f3db5192a6a6a80cc8bc3812096e602c6bd",
+      "bytes": 17541
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/4-480x430.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/4-480x430.webp",
+      "purpose": "homepage image",
+      "sha256": "6639852398f53a5499002216682a99e0b3ca4d25205aa4311b72e8fe0e4f5a3d",
+      "bytes": 20876
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/5-192x173.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/5-192x173.avif",
+      "purpose": "homepage image",
+      "sha256": "3e4e5d7363f2b5281a7695ea9d62a1e5d81892df2e251b33ef2dd69c0ec7d92d",
+      "bytes": 3761
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/5-192x173.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/5-192x173.webp",
+      "purpose": "homepage image",
+      "sha256": "af9314dcf4fe893bee7b4563d896fbd2c0d33c0c422db5e4bf3f7a247a9eea6f",
+      "bytes": 4108
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/5-352x317.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/5-352x317.avif",
+      "purpose": "homepage image",
+      "sha256": "ee2fd1a782e1985b814583ed53deb140ef59a3b665d437f947d6c183a270d36f",
+      "bytes": 7900
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/5-352x317.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/5-352x317.webp",
+      "purpose": "homepage image",
+      "sha256": "5430de88bb80b06e2d88ec4497f99a2ef1db7ec71297c4afbcca1b390b3b94f7",
+      "bytes": 8948
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/6-224x211.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/6-224x211.avif",
+      "purpose": "homepage image",
+      "sha256": "7d992a07203ff1420493aaca89463e2b0ec6dfec8c9c289a0f408fa57ac005e9",
+      "bytes": 8619
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/6-224x211.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/6-224x211.webp",
+      "purpose": "homepage image",
+      "sha256": "151db18ada39f05218144cca943eebabb159ccd779ef4e1603cc83d52657eaf2",
+      "bytes": 13360
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/6-416x393.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/6-416x393.avif",
+      "purpose": "homepage image",
+      "sha256": "f882215d0a91db6fd2182f951a0733cc501f98e4a5011dcbef3d68141b9f76fa",
+      "bytes": 22309
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/6-416x393.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/6-416x393.webp",
+      "purpose": "homepage image",
+      "sha256": "814dbdebf1a2b6495ab4100385c7a217ff0aee39bb157e3d8613a71c8fc6985b",
+      "bytes": 37486
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/7-320x286.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/7-320x286.avif",
+      "purpose": "homepage image",
+      "sha256": "8998f06d07f75f09c4850cae12dcbf1d9a5df447a644519a342e9adfc7c06224",
+      "bytes": 8953
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/7-320x286.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/7-320x286.webp",
+      "purpose": "homepage image",
+      "sha256": "3d520e5657d2d2d238732846942b9cb75e7924114d5f6240d1ffff30a893a41e",
+      "bytes": 10090
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/7-608x543.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/7-608x543.avif",
+      "purpose": "homepage image",
+      "sha256": "84b4bfa859891a1846f688af4593044bf83c66c247f1d2e6ea38dbc3bbe1cc6d",
+      "bytes": 22739
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/7-608x543.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/7-608x543.webp",
+      "purpose": "homepage image",
+      "sha256": "7f359d6cb4b8c71d22f805c838ace0229125e07b09f7366e4b1b89f0cadf4ea6",
+      "bytes": 25968
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/8-1280x1143.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/8-1280x1143.avif",
+      "purpose": "homepage image",
+      "sha256": "8b3549de27146d8b876cd94790c82d4652d4935bfdce2ea4893f3d46ce6dbb09",
+      "bytes": 63970
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/8-1280x1143.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/8-1280x1143.webp",
+      "purpose": "homepage image",
+      "sha256": "33c5dc4d4629031a71763c188a4aa93ab2c5f7a53f5f5f09b1e2f2a55258ed55",
+      "bytes": 71468
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/8-640x572.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/8-640x572.avif",
+      "purpose": "homepage image",
+      "sha256": "38bdb174ccb43c4f86739899c124e6ec64834f870394b31f50372b275256273d",
+      "bytes": 23454
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/8-640x572.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/8-640x572.webp",
+      "purpose": "homepage image",
+      "sha256": "6cbf37a7d6d647b99cd47d17c92a4dc282b02c0b697603fada4dd44b560e7c97",
+      "bytes": 25242
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/9-224x201.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/9-224x201.avif",
+      "purpose": "homepage image",
+      "sha256": "e657ab14431e8e93d2607e9f058ea12c3541070f72a9f038918e1200fec898bb",
+      "bytes": 4748
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/9-224x201.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/9-224x201.webp",
+      "purpose": "homepage image",
+      "sha256": "96758854191bf3fe593e38d7ad6025bad4f7feb40a6e2e45710428ba2f4aeee6",
+      "bytes": 5046
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/9-416x373.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/9-416x373.avif",
+      "purpose": "homepage image",
+      "sha256": "2ceba1bc32dc127ad8a1ce406fd4f9d24d569d0ea6439f68ce6b19dc26594c18",
+      "bytes": 9983
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/9-416x373.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/9-416x373.webp",
+      "purpose": "homepage image",
+      "sha256": "7ede0a8220854db207b1fc9d4dae75821c6265af5b658cca17bb9ccc0009c7b9",
+      "bytes": 11140
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-1-179x174.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-1-179x174.avif",
+      "purpose": "homepage image",
+      "sha256": "8aed8b72bf05eccdacc963bd8a68e31e7d038cf002fe2deb6ed3a83fe3ddfae8",
+      "bytes": 737
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-1-179x174.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-1-179x174.webp",
+      "purpose": "homepage image",
+      "sha256": "dbc5d9dbce66bb6d5d53b0db5699e0a4d8e64d2d770eaae6fd08519cc6d60d7c",
+      "bytes": 1808
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-2-260x244.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-2-260x244.avif",
+      "purpose": "homepage image",
+      "sha256": "b34e15843291bd09c958ffe347081d0e0172009e8d3f378d0a4cce317f703580",
+      "bytes": 835
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-2-260x244.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-2-260x244.webp",
+      "purpose": "homepage image",
+      "sha256": "27f94163192e3339b7a0e3c9654f494d86771588840ce9e6c2382ae524129080",
+      "bytes": 2594
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-3-166x165.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-3-166x165.avif",
+      "purpose": "homepage image",
+      "sha256": "cc29670d76f368c599ca095ad9306c87763cee9135eed0e827e11883279970a9",
+      "bytes": 769
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-3-166x165.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-3-166x165.webp",
+      "purpose": "homepage image",
+      "sha256": "b81a9aba3eb3f01e3cf9f6b6d57bb162dd4581850fc85254b6c56dc596cff541",
+      "bytes": 1978
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-4-136x124.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-4-136x124.avif",
+      "purpose": "homepage image",
+      "sha256": "035906b655807aa4ff6397c8c14ccf1cf2d20d540fdfe6110c4bd44e524c5647",
+      "bytes": 704
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-4-136x124.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-4-136x124.webp",
+      "purpose": "homepage image",
+      "sha256": "0551c15203efffc9ae144a52fd12c0550699aa22a8e4ea58195cee98e831e3d3",
+      "bytes": 1102
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-5-102x94.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-5-102x94.avif",
+      "purpose": "homepage image",
+      "sha256": "73b6e2132802e3fa04a7c71d6a27b56f56f9cd7495afd7bb9b1d3371d958433a",
+      "bytes": 678
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-5-102x94.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-5-102x94.webp",
+      "purpose": "homepage image",
+      "sha256": "af5c4bcd0982a6c3b54575f10c2dd934ebb3167ba0eca961ebb499588f7c45ed",
+      "bytes": 842
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-6-118x112.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-6-118x112.avif",
+      "purpose": "homepage image",
+      "sha256": "e353ce704c7e6728f48daad2c7815711450c13228699811dc0c5b156d54dacb8",
+      "bytes": 710
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-6-118x112.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-6-118x112.webp",
+      "purpose": "homepage image",
+      "sha256": "9c901c8b914ab9a9a8c69fb55d75747db2c311ce4c4653863ff63e65e5198988",
+      "bytes": 1308
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-7-173x157.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-7-173x157.avif",
+      "purpose": "homepage image",
+      "sha256": "689c0f8a84f5ed7d8ae1a7b800cb85188e92bbcac2a6bc5f39d406d0d9c0f1f6",
+      "bytes": 810
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-7-173x157.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-7-173x157.webp",
+      "purpose": "homepage image",
+      "sha256": "108672f4d610ec23f3e877713556a961f340199464a1e7058353bfb0cba30ae7",
+      "bytes": 1676
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-8-339x306.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-8-339x306.avif",
+      "purpose": "homepage image",
+      "sha256": "04aecbf63d4f3096d2ae35b9a0b6fad509f3a9f811758cf7530935dfc5b470cb",
+      "bytes": 965
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-8-339x306.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-8-339x306.webp",
+      "purpose": "homepage image",
+      "sha256": "64214fc44036628a2ba06ccb293c6373586a531d4b2cb54558912442c88c312a",
+      "bytes": 2820
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-9-122x111.avif",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-9-122x111.avif",
+      "purpose": "homepage image",
+      "sha256": "b8008509b4f2fdf52b5ed774efac8b89766e34ebfd53f6e22d7a07fda6c554e8",
+      "bytes": 707
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/hero-cards/non-mobile/shadows/shadow-9-122x111.webp",
+      "path": "frontend/public/images/v2/hero-cards/non-mobile/shadows/shadow-9-122x111.webp",
+      "purpose": "homepage image",
+      "sha256": "c6f4f48356cea4750ab1f5f5c61c6d708c93b50b43198ad3279888b8609cc006",
+      "bytes": 1066
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-landscape-narrow-1150x599.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-landscape-narrow-1150x599.avif",
+      "purpose": "homepage image",
+      "sha256": "47e7af43a8a9b476e7aa0e61ea881014bfa6665d2092a0c00578222374672028",
+      "bytes": 156532
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-landscape-narrow-1150x599.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-landscape-narrow-1150x599.webp",
+      "purpose": "homepage image",
+      "sha256": "fc1d8439a4b6af24e383e519bad09c9b42c7c1eccfeb9c8fbc2f45fc447c81da",
+      "bytes": 185094
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-landscape-narrow-2300x1198.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-landscape-narrow-2300x1198.avif",
+      "purpose": "homepage image",
+      "sha256": "b399bcebeb949205be3d83358a30fa5907b0a993ae62f64e9f5064f262790b10",
+      "bytes": 378473
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-landscape-narrow-2300x1198.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-landscape-narrow-2300x1198.webp",
+      "purpose": "homepage image",
+      "sha256": "c24143ef14efdb2fbbf0d76d22806bc8f4c34acc424ffc585b8793b564764568",
+      "bytes": 457200
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-laptop-short-1150x429.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-laptop-short-1150x429.avif",
+      "purpose": "homepage image",
+      "sha256": "af2933b736a9d522d4105f0dec0bd3187be7e453e60c5731ec17dd0438043cd1",
+      "bytes": 133300
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-laptop-short-1150x429.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-laptop-short-1150x429.webp",
+      "purpose": "homepage image",
+      "sha256": "fd6545cb071435c55c3fa7e740d9c242736e06328c46c80afd8cc4841df6dc95",
+      "bytes": 153872
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-laptop-short-2300x858.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-laptop-short-2300x858.avif",
+      "purpose": "homepage image",
+      "sha256": "40d47df7f43594c94f59e907d6b7a7218e676354ea0da4821bff0a5d7bc221a7",
+      "bytes": 317675
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-laptop-short-2300x858.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-laptop-short-2300x858.webp",
+      "purpose": "homepage image",
+      "sha256": "3e025c875a13b957cddf511de31b42d916136aaa2fd8200d3b555a1d0a0c39a8",
+      "bytes": 382806
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-laptop-wide-1150x458.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-laptop-wide-1150x458.avif",
+      "purpose": "homepage image",
+      "sha256": "aebdd7f5664a922177ed28da8859e2fb1b65dd4318eabf35e3710d9c3a1f5d01",
+      "bytes": 132781
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-laptop-wide-1150x458.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-laptop-wide-1150x458.webp",
+      "purpose": "homepage image",
+      "sha256": "6b4af059b62d377a8d10f0cc7f662eb74b3752c8622cdc357cbd383ffb5317dc",
+      "bytes": 153956
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-laptop-wide-2300x916.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-laptop-wide-2300x916.avif",
+      "purpose": "homepage image",
+      "sha256": "f94691ad305e68b36b8a3810f751034217595f764d9268ca57242c5d81d81de9",
+      "bytes": 323178
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-laptop-wide-2300x916.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-laptop-wide-2300x916.webp",
+      "purpose": "homepage image",
+      "sha256": "b4ad24935c8b3eec329cbd3fc179034219c2895403a8d23ee4acf79e2fdd223e",
+      "bytes": 385696
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-portrait-phone-1080x1800.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-portrait-phone-1080x1800.avif",
+      "purpose": "homepage image",
+      "sha256": "3c91b77023fb18a6e620eb961f654fe3f487a3b6e1b14a0cc453cf87311f2e49",
+      "bytes": 330151
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-portrait-phone-1080x1800.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-portrait-phone-1080x1800.webp",
+      "purpose": "homepage image",
+      "sha256": "11b9c19744c00830a0f10feb57b4cc944e89e51fa44589ab7c3202d7d98abf0c",
+      "bytes": 394460
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-portrait-phone-540x900.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-portrait-phone-540x900.avif",
+      "purpose": "homepage image",
+      "sha256": "fb9ec98e10b863a792bcd8b90fe9e086435e0dbf186b124cfb03e30d3ddfe75c",
+      "bytes": 135124
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-portrait-phone-540x900.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-portrait-phone-540x900.webp",
+      "purpose": "homepage image",
+      "sha256": "9b4147198d911376d95ee828bd675bae8b4935d774d568dc5d82983d8e55383e",
+      "bytes": 158908
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-portrait-tablet-1150x1150.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-portrait-tablet-1150x1150.avif",
+      "purpose": "homepage image",
+      "sha256": "172cf98c8f52c0c6e4630d67c8f54297ed901df332732e1b649ab630c5e70d79",
+      "bytes": 206004
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-portrait-tablet-1150x1150.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-portrait-tablet-1150x1150.webp",
+      "purpose": "homepage image",
+      "sha256": "e807af5977fa81acebf204648ce7f4875c537fc9707733fa9a4398b01e8c1281",
+      "bytes": 247924
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-portrait-tablet-2300x2300.avif",
+      "path": "frontend/public/images/v2/home/comparison-academic-portrait-tablet-2300x2300.avif",
+      "purpose": "homepage image",
+      "sha256": "5bbc867dd2be8eef616c99dae5c7c0b1b23ad379134c2efd70e5f47fa38a6cb8",
+      "bytes": 426437
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-academic-portrait-tablet-2300x2300.webp",
+      "path": "frontend/public/images/v2/home/comparison-academic-portrait-tablet-2300x2300.webp",
+      "purpose": "homepage image",
+      "sha256": "773e5df6778814685eab49c80b89930dd8022eacf1168cd353c2c4d2a3f1f09c",
+      "bytes": 486994
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-landscape-narrow-1150x599.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-landscape-narrow-1150x599.avif",
+      "purpose": "homepage image",
+      "sha256": "60a1e57e7f49f9a7bfa6b6d83d6dfaebeecd31451f00fcbbba216f750e9dc9e1",
+      "bytes": 74769
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-landscape-narrow-1150x599.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-landscape-narrow-1150x599.webp",
+      "purpose": "homepage image",
+      "sha256": "a8ad3615010f02522a524ad07da3f48017e5f15357f76f435b10b8480b7ae322",
+      "bytes": 100958
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-landscape-narrow-2300x1198.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-landscape-narrow-2300x1198.avif",
+      "purpose": "homepage image",
+      "sha256": "64f49fa70c1d5bf34f8d9a68d217ae0d5feaaab9fb4524f181190700bf3e2599",
+      "bytes": 179525
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-landscape-narrow-2300x1198.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-landscape-narrow-2300x1198.webp",
+      "purpose": "homepage image",
+      "sha256": "11e4832ef1d514989bc6c7f8d1780a1c0c2d0d77e52eb7c5c53d28721c2dec3b",
+      "bytes": 249334
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-laptop-short-1150x429.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-laptop-short-1150x429.avif",
+      "purpose": "homepage image",
+      "sha256": "fa8074ff8d53a598d53b6ceaed190bd8f98e39ca0d10cbd78a3b75a5e47800cf",
+      "bytes": 48289
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-laptop-short-1150x429.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-laptop-short-1150x429.webp",
+      "purpose": "homepage image",
+      "sha256": "3ef97d1a63979eb2450ec2964eefea9be0edf39ee067014a8dd54ccb180b5b53",
+      "bytes": 62176
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-laptop-short-2300x858.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-laptop-short-2300x858.avif",
+      "purpose": "homepage image",
+      "sha256": "d972ce6bf61afbec15ab030da30c46dcbbc46dc60316683fcc037fe92d278cde",
+      "bytes": 120616
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-laptop-short-2300x858.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-laptop-short-2300x858.webp",
+      "purpose": "homepage image",
+      "sha256": "2ec3f76e2cb27c899beaaad97cd8e22799831b3d5c4329756fd78747474c8ac2",
+      "bytes": 164254
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-laptop-wide-1150x458.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-laptop-wide-1150x458.avif",
+      "purpose": "homepage image",
+      "sha256": "d5a19e68bd908ca7687e83dd212c8d4ff39c316960d2fc5b982deb6e541ba694",
+      "bytes": 52528
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-laptop-wide-1150x458.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-laptop-wide-1150x458.webp",
+      "purpose": "homepage image",
+      "sha256": "4b306a817fc74c64c0566b5b829547bc04c17b66627bb903c9b632cae848ad62",
+      "bytes": 69792
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-laptop-wide-2300x916.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-laptop-wide-2300x916.avif",
+      "purpose": "homepage image",
+      "sha256": "062ab24db424e8c1ee16c5d9ca88239633aaeaca94541650ccd1d87a77906df6",
+      "bytes": 129288
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-laptop-wide-2300x916.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-laptop-wide-2300x916.webp",
+      "purpose": "homepage image",
+      "sha256": "1916f4e3997cb920487ecb125ee8202355c33c411d5db5ce5e6719909d116056",
+      "bytes": 171154
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-portrait-phone-1080x1800.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-portrait-phone-1080x1800.avif",
+      "purpose": "homepage image",
+      "sha256": "ea915eabea6eaf8576254b068c89beecc58aab797cc3a76e8e4c576c2e2fd871",
+      "bytes": 144293
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-portrait-phone-1080x1800.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-portrait-phone-1080x1800.webp",
+      "purpose": "homepage image",
+      "sha256": "d44a0dc3f56be9069a92fbb6a57042c12aef1c2a84e254c256b52e9bd8ddd904",
+      "bytes": 196768
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-portrait-phone-540x900.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-portrait-phone-540x900.avif",
+      "purpose": "homepage image",
+      "sha256": "e74337db91761f480971ade188b9389222b5d4f3f7a739c0a7081858d78aa3ee",
+      "bytes": 58584
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-portrait-phone-540x900.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-portrait-phone-540x900.webp",
+      "purpose": "homepage image",
+      "sha256": "4f76a5baf1119ab5bab30c9929b99960b93c2880c4197ec72e621f384c44a611",
+      "bytes": 77402
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-portrait-tablet-1150x1150.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-portrait-tablet-1150x1150.avif",
+      "purpose": "homepage image",
+      "sha256": "a495bf6bd951a803884282d623b6b4eac14c33abb40b3eff0c697b38252e83c6",
+      "bytes": 73905
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-portrait-tablet-1150x1150.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-portrait-tablet-1150x1150.webp",
+      "purpose": "homepage image",
+      "sha256": "e239acc717d7bd46910f52ede8be802f75d74d96a3c799ae55d9fb512f9b2930",
+      "bytes": 96144
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-portrait-tablet-2300x2300.avif",
+      "path": "frontend/public/images/v2/home/comparison-school-portrait-tablet-2300x2300.avif",
+      "purpose": "homepage image",
+      "sha256": "e525bcf50aba04717087f5f8c5ff2f7af09c36b35bc459265a7e9da63fac6a6f",
+      "bytes": 203846
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/comparison-school-portrait-tablet-2300x2300.webp",
+      "path": "frontend/public/images/v2/home/comparison-school-portrait-tablet-2300x2300.webp",
+      "purpose": "homepage image",
+      "sha256": "1b7c9ac9d4796fcc9e4b4ffc1fcb00ec6c1b2352e80a6da36053f406a2990bc3",
+      "bytes": 243568
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/free-lesson-laptop.avif",
+      "path": "frontend/public/images/v2/home/free-lesson-laptop.avif",
+      "purpose": "homepage image",
+      "sha256": "065b15c8ff7b36c592591cf2b1b850d19e52bdfaed472572fcae3e4846688659",
+      "bytes": 29822
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/free-lesson-laptop.webp",
+      "path": "frontend/public/images/v2/home/free-lesson-laptop.webp",
+      "purpose": "homepage image",
+      "sha256": "6d847aaab0b8852a9d76fba2cc379b994073d140a8ad1ff021d660f5007357e4",
+      "bytes": 41158
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/hero-video-poster.avif",
+      "path": "frontend/public/images/v2/home/hero-video-poster.avif",
+      "purpose": "homepage static poster or license image",
+      "sha256": "fa81892731e507d81a4981b5915fc81d7f4885b7762858c8922bee4d8a05e786",
+      "bytes": 35568
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/hero-video-poster.webp",
+      "path": "frontend/public/images/v2/home/hero-video-poster.webp",
+      "purpose": "homepage static poster or license image",
+      "sha256": "fabb4f3a89ada2a3a1aef24a9576e53c32489e22a154386f09b54cc2417cc8e3",
+      "bytes": 45458
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/promo-loop-preview.avif",
+      "path": "frontend/public/images/v2/home/promo-loop-preview.avif",
+      "purpose": "homepage static poster or license image",
+      "sha256": "fd843861d1a1cfba3d8f1772985aa62410ae11cabe3cd2eb1320ab0653ab483d",
+      "bytes": 17926
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/promo-loop-preview.webp",
+      "path": "frontend/public/images/v2/home/promo-loop-preview.webp",
+      "purpose": "homepage static poster or license image",
+      "sha256": "988207507a210ecf9fd0134a77b62170921863cfdfdd68fd8a4fba769583568c",
+      "bytes": 18758
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/milana-zubova-cutout-20261019-1254x1254.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-11-cutout-20261019-1254x1254.avif",
+      "purpose": "homepage image",
+      "sha256": "630ae74d5329467eead3846b9cebb683bc24585af69c42e12761b5b3cf3be30b",
+      "bytes": 62467
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/milana-zubova-cutout-20261019-1254x1254.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-11-cutout-20261019-1254x1254.webp",
+      "purpose": "homepage image",
+      "sha256": "8042b695ed47e64f5138f320c57c372a7c028fcb0c9754f184765c4be0809ae6",
+      "bytes": 84848
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/milana-zubova-cutout-20261019-384x384.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-11-cutout-20261019-384x384.avif",
+      "purpose": "homepage image",
+      "sha256": "1a75767604bd763743aa14f41773267906156762795acec6c37ea1c508bf7ad7",
+      "bytes": 13672
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/milana-zubova-cutout-20261019-384x384.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-11-cutout-20261019-384x384.webp",
+      "purpose": "homepage image",
+      "sha256": "be1b5e533dbab16c3e88aa592f55983a1c7eed7c81b1ac179f3e8583cc3e749d",
+      "bytes": 17854
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/milana-zubova-cutout-20261019-640x640.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-11-cutout-20261019-640x640.avif",
+      "purpose": "homepage image",
+      "sha256": "a74167cbdcd21e9ceb514b24884a929c2efa549150e439632bc24893aa2d7dfa",
+      "bytes": 25501
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/milana-zubova-cutout-20261019-640x640.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-11-cutout-20261019-640x640.webp",
+      "purpose": "homepage image",
+      "sha256": "8675d9620e340e63cda71242a42423ce0b40d345cfe79a613b6da70e31a01b8a",
+      "bytes": 34814
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/milana-zubova-cutout-20261019-896x896.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-11-cutout-20261019-896x896.avif",
+      "purpose": "homepage image",
+      "sha256": "5f608746d154477b560de5dc7cbc057d1379ef8ff08e081e8d0e6beaa837d1fe",
+      "bytes": 39492
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/milana-zubova-cutout-20261019-896x896.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-11-cutout-20261019-896x896.webp",
+      "purpose": "homepage image",
+      "sha256": "ae541c5f2790644e8e67298435974ce944aa482c54957a36e2349126d73fa434",
+      "bytes": 55492
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/nikita-lagutin-cutout-20261019-1254x1254.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-12-cutout-20261019-1254x1254.avif",
+      "purpose": "homepage image",
+      "sha256": "5a3adca1829e281bf92ee4412678b6d90eeaf8ae4b3a7225a2407a20bcea74f2",
+      "bytes": 53347
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/nikita-lagutin-cutout-20261019-1254x1254.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-12-cutout-20261019-1254x1254.webp",
+      "purpose": "homepage image",
+      "sha256": "5f0229e18b719de6e2c3e1ebce396f8eb3cb5e229882812988c1298c2f0b59c6",
+      "bytes": 71840
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/nikita-lagutin-cutout-20261019-384x384.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-12-cutout-20261019-384x384.avif",
+      "purpose": "homepage image",
+      "sha256": "6cb861b5a476e1bcb756272abea95620ae16917d16bba0504cbe340bdb4ed689",
+      "bytes": 11822
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/nikita-lagutin-cutout-20261019-384x384.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-12-cutout-20261019-384x384.webp",
+      "purpose": "homepage image",
+      "sha256": "0496ef9654dd22281105dfd0f88b26d74ffa2fb1a77691fcdbd0f5f5b3ecba0d",
+      "bytes": 14408
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/nikita-lagutin-cutout-20261019-640x640.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-12-cutout-20261019-640x640.avif",
+      "purpose": "homepage image",
+      "sha256": "f190a4fd97f5d2b3997fa57dabf62f7f7e653a54abadf36835fecc521038c56b",
+      "bytes": 22045
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/nikita-lagutin-cutout-20261019-640x640.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-12-cutout-20261019-640x640.webp",
+      "purpose": "homepage image",
+      "sha256": "8304bdeb1e5c5eb9915975fb4b051342389e71b85b709bf85d3b1f14afc3c432",
+      "bytes": 29072
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/nikita-lagutin-cutout-20261019-896x896.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-12-cutout-20261019-896x896.avif",
+      "purpose": "homepage image",
+      "sha256": "40e40d6ef1fd83b84abb772bfe9b63fb82524454a8fd9f36422d03e50afe1f09",
+      "bytes": 34302
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/nikita-lagutin-cutout-20261019-896x896.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-12-cutout-20261019-896x896.webp",
+      "purpose": "homepage image",
+      "sha256": "3d11ec1d04572793d1921f1a0eb6befc1318de741fa1429bba05f13361ba66ed",
+      "bytes": 46484
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-abalmasova-cutout-20261019-1254x1254.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-13-cutout-20261019-1254x1254.avif",
+      "purpose": "homepage image",
+      "sha256": "36eda845a24f96d2e3697384d2756f43d2ef4f82b94d140950376f2456fc8654",
+      "bytes": 50569
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-abalmasova-cutout-20261019-1254x1254.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-13-cutout-20261019-1254x1254.webp",
+      "purpose": "homepage image",
+      "sha256": "103af3c513ff7e31071d67be73babab16291484ebe37fb807a4d4efb817e1c68",
+      "bytes": 72398
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-abalmasova-cutout-20261019-384x384.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-13-cutout-20261019-384x384.avif",
+      "purpose": "homepage image",
+      "sha256": "f051adfa3529d259b445981d28f65ff470811f5160e892ee28032e208dc9d2a9",
+      "bytes": 11388
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-abalmasova-cutout-20261019-384x384.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-13-cutout-20261019-384x384.webp",
+      "purpose": "homepage image",
+      "sha256": "dca3c9e32a6393606e8c80ff3c721820e05910e49a8b26e9f2052dd490b40156",
+      "bytes": 14928
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-abalmasova-cutout-20261019-640x640.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-13-cutout-20261019-640x640.avif",
+      "purpose": "homepage image",
+      "sha256": "039615a23f0b8e3b06929ddf0a319adba494b75643f55973eaa19fe6f33e6ed8",
+      "bytes": 21298
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-abalmasova-cutout-20261019-640x640.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-13-cutout-20261019-640x640.webp",
+      "purpose": "homepage image",
+      "sha256": "a7eaf49121aded3c2e765ceb16d622fd5f7f0a647acaedd8e7885e237c651e92",
+      "bytes": 29368
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-abalmasova-cutout-20261019-896x896.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-13-cutout-20261019-896x896.avif",
+      "purpose": "homepage image",
+      "sha256": "673f7c37837e03933c53e7f718e4415bcc1f23d7842fc1f9e7f48ce7ae51cbb9",
+      "bytes": 32368
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-abalmasova-cutout-20261019-896x896.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-13-cutout-20261019-896x896.webp",
+      "purpose": "homepage image",
+      "sha256": "e69de146cab92f5aa8fc3e268158a2ce9aaf8678663a3c3def30c12e0c892d74",
+      "bytes": 47432
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-belyaeva-cutout-20261019-1254x1254.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-14-cutout-20261019-1254x1254.avif",
+      "purpose": "homepage image",
+      "sha256": "0aef708ee07f070c455e892a702e2a6c438fc7701816b7efaf0780e2661c2a5f",
+      "bytes": 56315
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-belyaeva-cutout-20261019-1254x1254.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-14-cutout-20261019-1254x1254.webp",
+      "purpose": "homepage image",
+      "sha256": "1e44757ecc6bacdf6eaac2b212a995136e560daaae9fbaed7eabdbc71311c670",
+      "bytes": 75896
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-belyaeva-cutout-20261019-384x384.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-14-cutout-20261019-384x384.avif",
+      "purpose": "homepage image",
+      "sha256": "56cb05ee22e53522a69bc91b0e79427fbf4f28c96ae11b411ce1296ee8463f85",
+      "bytes": 12213
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-belyaeva-cutout-20261019-384x384.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-14-cutout-20261019-384x384.webp",
+      "purpose": "homepage image",
+      "sha256": "a60b29ea4b501f2aea48707cccf9257a4f61489c91f0a5c1a52a1dbf31efa3ac",
+      "bytes": 15614
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-belyaeva-cutout-20261019-640x640.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-14-cutout-20261019-640x640.avif",
+      "purpose": "homepage image",
+      "sha256": "2656a6a7fc5ff364155c95daaca843464b171f5cc6f4516e2262442933fccbe1",
+      "bytes": 22451
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-belyaeva-cutout-20261019-640x640.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-14-cutout-20261019-640x640.webp",
+      "purpose": "homepage image",
+      "sha256": "de351c1b3bd64ecfad33d81f20b01d01320301ba12c96f9222b2ff4b30adf4b8",
+      "bytes": 30292
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-belyaeva-cutout-20261019-896x896.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-14-cutout-20261019-896x896.avif",
+      "purpose": "homepage image",
+      "sha256": "fa5b3969b6b3c8885ffce0dfe0b16c2ba1e16d5a46f6aee2f6d80799faa405e6",
+      "bytes": 35285
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/yuliya-belyaeva-cutout-20261019-896x896.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-14-cutout-20261019-896x896.webp",
+      "purpose": "homepage image",
+      "sha256": "aa6f4f28dd4a9d055027976aeb38ec06745563239acac69c219d7e3943de9c95",
+      "bytes": 49044
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/dmitriy-nikolaev-cutout-20261019-1254x1254.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-3-cutout-20261019-1254x1254.avif",
+      "purpose": "homepage image",
+      "sha256": "8692a782eefd5b7f5598aa9808619f337b1479c19db7fd356ca06740dfc5666d",
+      "bytes": 57777
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/dmitriy-nikolaev-cutout-20261019-1254x1254.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-3-cutout-20261019-1254x1254.webp",
+      "purpose": "homepage image",
+      "sha256": "ccf5fb62c6f29369a278f3eb3c70265f99545159454d7567f557f6d5e8a505d6",
+      "bytes": 76088
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/dmitriy-nikolaev-cutout-20261019-384x384.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-3-cutout-20261019-384x384.avif",
+      "purpose": "homepage image",
+      "sha256": "2def4b5a53242566557ca29f71debc8f6b8f8472d58173514002ba203e7b1c43",
+      "bytes": 12659
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/dmitriy-nikolaev-cutout-20261019-384x384.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-3-cutout-20261019-384x384.webp",
+      "purpose": "homepage image",
+      "sha256": "f50bf8534676bfc0b8b38da4699cf657c4a658beb8f2cd784bdc1ee2236d9197",
+      "bytes": 15802
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/dmitriy-nikolaev-cutout-20261019-640x640.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-3-cutout-20261019-640x640.avif",
+      "purpose": "homepage image",
+      "sha256": "6dcfc6b01744a556e72142747121626b59de4877833cee8c2f6edca343a76fa8",
+      "bytes": 23293
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/dmitriy-nikolaev-cutout-20261019-640x640.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-3-cutout-20261019-640x640.webp",
+      "purpose": "homepage image",
+      "sha256": "4743bdce1a19b482aa59eaaa3ad9f624ac86f9d2598a5e54c84a103495ec9fe0",
+      "bytes": 31496
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/dmitriy-nikolaev-cutout-20261019-896x896.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-3-cutout-20261019-896x896.avif",
+      "purpose": "homepage image",
+      "sha256": "b0307d1482fd727f7a067c69cfa4950510e4c9cda0e9f91591926b8891817372",
+      "bytes": 35462
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/dmitriy-nikolaev-cutout-20261019-896x896.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-3-cutout-20261019-896x896.webp",
+      "purpose": "homepage image",
+      "sha256": "8a9bd930c6e64d57925dcdd2c14ea9ba8fd0cfc39731c29283d3e817f8831262",
+      "bytes": 51122
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/ekaterina-litovchenko-cutout-20261019-1254x1254.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-5-cutout-20261019-1254x1254.avif",
+      "purpose": "homepage image",
+      "sha256": "fde889cf5c142b5bcd914a1dbed85d890cef99255b291679fcce7c744d6f33e2",
+      "bytes": 109288
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/ekaterina-litovchenko-cutout-20261019-1254x1254.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-5-cutout-20261019-1254x1254.webp",
+      "purpose": "homepage image",
+      "sha256": "d9508e40d5c9da687d1e43a3803323cceed1e0aab1d98ec1ef55e0392ce55671",
+      "bytes": 154158
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/ekaterina-litovchenko-cutout-20261019-384x384.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-5-cutout-20261019-384x384.avif",
+      "purpose": "homepage image",
+      "sha256": "c59d1fe426b66c3edc7d1aad0d74522f8996b75e9ac79b3806ea22251c031c6b",
+      "bytes": 21058
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/ekaterina-litovchenko-cutout-20261019-384x384.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-5-cutout-20261019-384x384.webp",
+      "purpose": "homepage image",
+      "sha256": "11f037cfb82763c5a0fc80323c33881826edd6158db28c3af441835a9e7dab28",
+      "bytes": 28910
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/ekaterina-litovchenko-cutout-20261019-640x640.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-5-cutout-20261019-640x640.avif",
+      "purpose": "homepage image",
+      "sha256": "3af3a3c3f6cc8297be8cfe1f3f8a5d50c8c27273f57a56c07f6632580f41fb9a",
+      "bytes": 41966
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/ekaterina-litovchenko-cutout-20261019-640x640.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-5-cutout-20261019-640x640.webp",
+      "purpose": "homepage image",
+      "sha256": "bbcb66fe2b6aaa951a44f72b16b3078b0cc2f58b423feb713bf6749d7a726c9e",
+      "bytes": 59674
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/ekaterina-litovchenko-cutout-20261019-896x896.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-5-cutout-20261019-896x896.avif",
+      "purpose": "homepage image",
+      "sha256": "ed2b45a90f4a29e17bbfeadd86060f5b89a8870b08d2b831f13fc682b4cbc813",
+      "bytes": 67479
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/ekaterina-litovchenko-cutout-20261019-896x896.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-5-cutout-20261019-896x896.webp",
+      "purpose": "homepage image",
+      "sha256": "8117fb0d64be21ba632ac9cfbe26f85020ac16280694ec5c7eddd0250046a4aa",
+      "bytes": 98700
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/elena-lazareva-cutout-20261019-1254x1254.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-6-cutout-20261019-1254x1254.avif",
+      "purpose": "homepage image",
+      "sha256": "6d66ca17130e71987defdd8eeadd93a60d95e88d032165b62c3b7328305a0887",
+      "bytes": 62266
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/elena-lazareva-cutout-20261019-1254x1254.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-6-cutout-20261019-1254x1254.webp",
+      "purpose": "homepage image",
+      "sha256": "430d958f0d68dbb6b159df8ffa9db91e327f9639709ba938fc9f664bfb1439d3",
+      "bytes": 89032
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/elena-lazareva-cutout-20261019-384x384.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-6-cutout-20261019-384x384.avif",
+      "purpose": "homepage image",
+      "sha256": "7788861e75c08ec86458b1549e9bb595a7d0886f9d9d18533ac1b55efc0c7942",
+      "bytes": 12968
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/elena-lazareva-cutout-20261019-384x384.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-6-cutout-20261019-384x384.webp",
+      "purpose": "homepage image",
+      "sha256": "faf746e0a197a6bc5c912b03dbd713efc17428b218cfccd792e1705ced360061",
+      "bytes": 18012
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/elena-lazareva-cutout-20261019-640x640.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-6-cutout-20261019-640x640.avif",
+      "purpose": "homepage image",
+      "sha256": "c9c5d720e6b73f8d695823d1401921777dcb3b007017106c7e233816b4363a0b",
+      "bytes": 25032
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/elena-lazareva-cutout-20261019-640x640.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-6-cutout-20261019-640x640.webp",
+      "purpose": "homepage image",
+      "sha256": "ce560f645eb7d861983de538894c4fb80e0f0c5b933cfc29a56f5ba79d6d887c",
+      "bytes": 35956
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/elena-lazareva-cutout-20261019-896x896.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-6-cutout-20261019-896x896.avif",
+      "purpose": "homepage image",
+      "sha256": "1b75ee7bf8fe0c99dbb30d60b4911536879fe445d2252a89c3199bc82b626229",
+      "bytes": 38820
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/elena-lazareva-cutout-20261019-896x896.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-6-cutout-20261019-896x896.webp",
+      "purpose": "homepage image",
+      "sha256": "415be9a8a71ead7d219f915174f8352663c8368056be764c2381dc4b7e619544",
+      "bytes": 58016
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/kseniya-lushnikova-cutout-20261019-1254x1254.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-7-cutout-20261019-1254x1254.avif",
+      "purpose": "homepage image",
+      "sha256": "3fd436347c3c32d3ca7fdf6d5f7aaebd7462df20a76809cfdcf3f945e10cdfcb",
+      "bytes": 55065
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/kseniya-lushnikova-cutout-20261019-1254x1254.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-7-cutout-20261019-1254x1254.webp",
+      "purpose": "homepage image",
+      "sha256": "9c79409a7ef28dd6b384414eb1bea3a1e293b177e0e51081124c2f3d99515c18",
+      "bytes": 81000
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/kseniya-lushnikova-cutout-20261019-384x384.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-7-cutout-20261019-384x384.avif",
+      "purpose": "homepage image",
+      "sha256": "371e7a79a6563869b49a586c9224782023ad7472d1c246c84b2454716b2fd72b",
+      "bytes": 12335
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/kseniya-lushnikova-cutout-20261019-384x384.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-7-cutout-20261019-384x384.webp",
+      "purpose": "homepage image",
+      "sha256": "27a05c87ce903fee5ffa262985b2c3b693935648df2fbbd5b53735d4d78b9315",
+      "bytes": 16280
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/kseniya-lushnikova-cutout-20261019-640x640.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-7-cutout-20261019-640x640.avif",
+      "purpose": "homepage image",
+      "sha256": "374d2fa2cf4fb939975041e4b4d1794343fe5bf4c0bbed4a616bcb3c89b56e13",
+      "bytes": 22976
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/kseniya-lushnikova-cutout-20261019-640x640.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-7-cutout-20261019-640x640.webp",
+      "purpose": "homepage image",
+      "sha256": "b4cc8c22893b31ff472e86c08ebbac259b9af94290e74256979cf3658ab0dced",
+      "bytes": 32128
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/kseniya-lushnikova-cutout-20261019-896x896.avif",
+      "path": "frontend/public/images/v2/home/team/demo-author-7-cutout-20261019-896x896.avif",
+      "purpose": "homepage image",
+      "sha256": "0980fe00a8f53782c349ae7409e37a7c35a78085130287764081828777d6318e",
+      "bytes": 35416
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/home/team/kseniya-lushnikova-cutout-20261019-896x896.webp",
+      "path": "frontend/public/images/v2/home/team/demo-author-7-cutout-20261019-896x896.webp",
+      "purpose": "homepage image",
+      "sha256": "32e0ae88f52620c4ecf444f277f3204f7fc8f7c9a3133ce01b298e20cf95617d",
+      "bytes": 51454
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-anatomiya-v2-480x480.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-anatomiya-v2-480x480.avif",
+      "purpose": "homepage image",
+      "sha256": "2124404569b9e0effbeb81d55f801aab6c454d0981a21e44cd6b451d5bba6164",
+      "bytes": 26894
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-anatomiya-v2-480x480.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-anatomiya-v2-480x480.webp",
+      "purpose": "homepage image",
+      "sha256": "9015d88fed6641a4083ca20230e258dae00b341c718268074690850992a213f2",
+      "bytes": 33344
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-biohimiya-v2-576x384.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-biohimiya-v2-576x384.avif",
+      "purpose": "homepage image",
+      "sha256": "d3814738f53ccabd73cae21d41b2e20c3ca67774720bd08487b24908c5436bad",
+      "bytes": 29434
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-biohimiya-v2-576x384.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-biohimiya-v2-576x384.webp",
+      "purpose": "homepage image",
+      "sha256": "435e1c3ffe8266298f2efa51d1efabd39d2858223d589e1d3d9a4336bac9e6b9",
+      "bytes": 21916
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-bioorganicheskaya-himiya-v2-384x384.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-bioorganicheskaya-himiya-v2-384x384.avif",
+      "purpose": "homepage image",
+      "sha256": "ec4e9ffb3ec75e0acc061aced01c43af1da410401a9d8fc5d0cc70d92eccbd65",
+      "bytes": 12644
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-bioorganicheskaya-himiya-v2-384x384.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-bioorganicheskaya-himiya-v2-384x384.webp",
+      "purpose": "homepage image",
+      "sha256": "ea5fc8b8f89f8135f8e7609b29e01561cdf8b0833ed47161317bc09ecd4e140c",
+      "bytes": 11666
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-farmakologiya-v2-472x472.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-farmakologiya-v2-472x472.avif",
+      "purpose": "homepage image",
+      "sha256": "6c201c15ffc42cd3465bd2f29bd4712526b60a618b55d1141668134b2cee2bde",
+      "bytes": 18747
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-farmakologiya-v2-472x472.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-farmakologiya-v2-472x472.webp",
+      "purpose": "homepage image",
+      "sha256": "6c55b4e6aebf87e69f40f962293beb1b8ad40cd02ca976d032c273c689c800d2",
+      "bytes": 15588
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-fiziologiya-v2-416x416.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-fiziologiya-v2-416x416.avif",
+      "purpose": "homepage image",
+      "sha256": "09c8c6cc4bbe146631075bac78b449adbd700be18992a0d28532e0c4e617fe3f",
+      "bytes": 33982
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-fiziologiya-v2-416x416.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-fiziologiya-v2-416x416.webp",
+      "purpose": "homepage image",
+      "sha256": "5980e66e80d45e98cb6ab309ad775126c9d8ea40fa0f8d3c1daf878eab9a784e",
+      "bytes": 31474
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-gistologiya-v2-416x416.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-gistologiya-v2-416x416.avif",
+      "purpose": "homepage image",
+      "sha256": "d27be59195c056c173fd06d71b86c863e96ae4edd76f1ca1b24af1322d326e38",
+      "bytes": 37684
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-gistologiya-v2-416x416.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-gistologiya-v2-416x416.webp",
+      "purpose": "homepage image",
+      "sha256": "5ce36e39f39b15f17875dadcfcefdc779bbbc9a07c9cbdce59abee8c7a3ae35f",
+      "bytes": 44214
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-hirurgiya-v2-424x424.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-hirurgiya-v2-424x424.avif",
+      "purpose": "homepage image",
+      "sha256": "1dd9d81d3ea9e8b3a806a70b599e744ed991350c837136482437e6da08c4a3be",
+      "bytes": 31168
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-hirurgiya-v2-424x424.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-hirurgiya-v2-424x424.webp",
+      "purpose": "homepage image",
+      "sha256": "49b27c3f39e61baf646a31100b7ab62901c66c356eb00835acde64f5800c70bd",
+      "bytes": 26258
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-luchevaya-diagnostika-v2-576x384.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-luchevaya-diagnostika-v2-576x384.avif",
+      "purpose": "homepage image",
+      "sha256": "9e906b3e6b6284ca70cf1252c3b8eb887a4636ff5ebf7e2a4b919e16596c1f77",
+      "bytes": 21783
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-luchevaya-diagnostika-v2-576x384.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-luchevaya-diagnostika-v2-576x384.webp",
+      "purpose": "homepage image",
+      "sha256": "44526c85881ae2dbecc1cac2099b1a71741cc1dd4a7dd5f2917ea5bc08de077f",
+      "bytes": 21870
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-mikrobiologiya-v2-432x432.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-mikrobiologiya-v2-432x432.avif",
+      "purpose": "homepage image",
+      "sha256": "c56d3d3318747f87952b4ffdcc9fe8b51e0df6a9bb215354d2a5d7c98803ffb9",
+      "bytes": 27323
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-mikrobiologiya-v2-432x432.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-mikrobiologiya-v2-432x432.webp",
+      "purpose": "homepage image",
+      "sha256": "ba250e64f1c5957fb7c63afcec1578f1e6770cfb2dfcb22d9b766e76ed76634c",
+      "bytes": 22774
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-nevrologiya-v2-528x352.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-nevrologiya-v2-528x352.avif",
+      "purpose": "homepage image",
+      "sha256": "5d325f7415ac3b3e42d4e6a3e1726274d4b39f925323bc4ed76f793515572307",
+      "bytes": 55114
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-nevrologiya-v2-528x352.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-nevrologiya-v2-528x352.webp",
+      "purpose": "homepage image",
+      "sha256": "acb178399d9ef5220b61c88ffe0474de1e4e2fdbb9d2db77e43e672a4190f1af",
+      "bytes": 41370
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-patofiziologiya-v2-416x416.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-patofiziologiya-v2-416x416.avif",
+      "purpose": "homepage image",
+      "sha256": "4bf9686d62716e33f1b583a71102b0de1d0e04253decf0a44b0e06e65fb0d4b7",
+      "bytes": 22113
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-patofiziologiya-v2-416x416.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-patofiziologiya-v2-416x416.webp",
+      "purpose": "homepage image",
+      "sha256": "9d0d0852346e2264671eac416ae457a82f2461907c9016ad16fe4db84a0cb316",
+      "bytes": 20798
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-patologicheskaya-anatomiya-v2-608x608.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-patologicheskaya-anatomiya-v2-608x608.avif",
+      "purpose": "homepage image",
+      "sha256": "4dcf075963881429e5af8ab81e250701ebee907b3823d6ae99ff00b9ed5e4eb1",
+      "bytes": 40875
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-patologicheskaya-anatomiya-v2-608x608.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-patologicheskaya-anatomiya-v2-608x608.webp",
+      "purpose": "homepage image",
+      "sha256": "84792a454ca386a9a9d04156518381623b34b52605947a65bcc1b251c227fb3b",
+      "bytes": 44358
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-propedevtika-vnutrennih-boleznej-v2-392x392.avif",
+      "path": "frontend/public/images/v2/subjects/generated/learning-propedevtika-vnutrennih-boleznej-v2-392x392.avif",
+      "purpose": "homepage image",
+      "sha256": "f4462907a5eaa4a4ff29187554aa5250ff4cee6dd6b0a400c2b3979ec5457b5f",
+      "bytes": 14358
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/images/v2/subjects/generated/learning-propedevtika-vnutrennih-boleznej-v2-392x392.webp",
+      "path": "frontend/public/images/v2/subjects/generated/learning-propedevtika-vnutrennih-boleznej-v2-392x392.webp",
+      "purpose": "homepage image",
+      "sha256": "fc868985a4cdec49814c18925ae024e6fe2fff4be38de32a291203ff422f4281",
+      "bytes": 15332
+    }
+  ]
+}

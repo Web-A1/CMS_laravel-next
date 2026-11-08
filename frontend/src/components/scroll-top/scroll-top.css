@@ -1,0 +1,63 @@
+:root {
+  --site-floating-control-size: 3rem;
+  --site-floating-control-gap: 0.75rem;
+  --site-floating-rail-gap: 1.25rem;
+  --site-floating-control-right: max(
+    var(--page-edge-gutter),
+    calc((100vw - var(--site-shell-max-width)) / 2 - var(--site-floating-control-size) - var(--site-floating-rail-gap))
+  );
+  --site-floating-control-bottom: max(1rem, calc(env(safe-area-inset-bottom) + 1rem));
+  --site-floating-cart-bottom: max(
+    calc(1rem + var(--site-floating-control-size) + var(--site-floating-control-gap)),
+    calc(env(safe-area-inset-bottom) + 1rem + var(--site-floating-control-size) + var(--site-floating-control-gap))
+  );
+}
+
+.scroll-top {
+  position: fixed;
+  right: var(--site-floating-control-right);
+  bottom: var(--site-floating-control-bottom);
+  z-index: 1800;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.scroll-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+@media (width <= 480px) {
+  .scroll-top {
+    --button-height: var(--site-floating-control-size);
+  }
+
+  .scroll-top .button-arrow {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
+  }
+
+  .scroll-top .button-arrow svg {
+    stroke-width: 1.125px;
+  }
+
+  .scroll-top .button-arrow path {
+    vector-effect: non-scaling-stroke;
+  }
+}
+
+.site-floating-cart {
+  position: fixed;
+  right: var(--site-floating-control-right);
+  bottom: var(--site-floating-cart-bottom);
+  z-index: 1800;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-top {
+    transition: none;
+  }
+}

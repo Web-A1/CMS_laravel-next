@@ -1,0 +1,66 @@
+.lessonVideoViewport {
+  width: 100dvw;
+  max-width: 100dvw;
+  margin-inline: calc(var(--page-gutter) * -1);
+}
+
+.lessonNav {
+  min-width: 0;
+}
+
+.lessonNavItem {
+  min-width: 0;
+}
+
+.lessonNavLabel {
+  white-space: nowrap;
+}
+
+@media (min-width: 448px) and (max-width: 639.98px) {
+  .lessonVideoViewport {
+    margin-inline: calc(50% - 50dvw);
+  }
+}
+
+.telegramLink {
+  --lesson-telegram-icon-color: var(--color-brand);
+}
+
+.telegramLink:hover,
+.telegramLink:focus-visible {
+  --lesson-telegram-icon-color: var(--color-telegram);
+}
+
+.telegramIcon {
+  color: var(--lesson-telegram-icon-color);
+}
+
+@media (max-width: 359.98px) {
+  .lessonNav {
+    gap: 0.5rem;
+  }
+
+  .lessonNavItem {
+    flex: 1 1 0;
+    gap: 0.25rem;
+  }
+
+  .lessonNavItemNext {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .lessonNavLabel {
+    max-width: 4.5rem;
+    white-space: normal;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .lessonVideoViewport {
+    width: auto;
+    max-width: none;
+    margin-inline: 0;
+  }
+}

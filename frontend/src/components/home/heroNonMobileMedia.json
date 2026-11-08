@@ -1,0 +1,182 @@
+{
+  "1": {
+    "width": 1355,
+    "height": 1309,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/1-672x649.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/1-672x649.webp",
+    "variants": [
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/1-352x340.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/1-352x340.webp",
+        "width": 352,
+        "height": 340
+      },
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/1-672x649.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/1-672x649.webp",
+        "width": 672,
+        "height": 649
+      }
+    ]
+  },
+  "2": {
+    "width": 2160,
+    "height": 2016,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/2-960x896.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/2-960x896.webp",
+    "variants": [
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/2-480x448.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/2-480x448.webp",
+        "width": 480,
+        "height": 448
+      },
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/2-960x896.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/2-960x896.webp",
+        "width": 960,
+        "height": 896
+      }
+    ]
+  },
+  "3": {
+    "width": 1495,
+    "height": 1487,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/3-608x605.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/3-608x605.webp",
+    "variants": [
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/3-320x318.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/3-320x318.webp",
+        "width": 320,
+        "height": 318
+      },
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/3-608x605.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/3-608x605.webp",
+        "width": 608,
+        "height": 605
+      }
+    ]
+  },
+  "4": {
+    "width": 656,
+    "height": 588,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/4-480x430.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/4-480x430.webp",
+    "variants": [
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/4-256x229.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/4-256x229.webp",
+        "width": 256,
+        "height": 229
+      },
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/4-480x430.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/4-480x430.webp",
+        "width": 480,
+        "height": 430
+      }
+    ]
+  },
+  "5": {
+    "width": 720,
+    "height": 648,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/5-352x317.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/5-352x317.webp",
+    "variants": [
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/5-192x173.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/5-192x173.webp",
+        "width": 192,
+        "height": 173
+      },
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/5-352x317.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/5-352x317.webp",
+        "width": 352,
+        "height": 317
+      }
+    ]
+  },
+  "6": {
+    "width": 840,
+    "height": 793,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/6-416x393.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/6-416x393.webp",
+    "variants": [
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/6-224x211.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/6-224x211.webp",
+        "width": 224,
+        "height": 211
+      },
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/6-416x393.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/6-416x393.webp",
+        "width": 416,
+        "height": 393
+      }
+    ]
+  },
+  "7": {
+    "width": 1264,
+    "height": 1128,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/7-608x543.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/7-608x543.webp",
+    "variants": [
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/7-320x286.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/7-320x286.webp",
+        "width": 320,
+        "height": 286
+      },
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/7-608x543.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/7-608x543.webp",
+        "width": 608,
+        "height": 543
+      }
+    ]
+  },
+  "8": {
+    "width": 3184,
+    "height": 2844,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/8-1280x1143.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/8-1280x1143.webp",
+    "variants": [
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/8-640x572.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/8-640x572.webp",
+        "width": 640,
+        "height": 572
+      },
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/8-1280x1143.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/8-1280x1143.webp",
+        "width": 1280,
+        "height": 1143
+      }
+    ]
+  },
+  "9": {
+    "width": 696,
+    "height": 624,
+    "avifSrc": "/images/v2/hero-cards/non-mobile/9-416x373.avif",
+    "webpSrc": "/images/v2/hero-cards/non-mobile/9-416x373.webp",
+    "variants": [
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/9-224x201.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/9-224x201.webp",
+        "width": 224,
+        "height": 201
+      },
+      {
+        "avifSrc": "/images/v2/hero-cards/non-mobile/9-416x373.avif",
+        "webpSrc": "/images/v2/hero-cards/non-mobile/9-416x373.webp",
+        "width": 416,
+        "height": 373
+      }
+    ]
+  }
+}

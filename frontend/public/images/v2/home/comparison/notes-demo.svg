@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#eef5f1"/>
+  <rect x="36" y="28" width="1128" height="744" rx="12" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#1a1d1f">
+    <text x="88" y="82" font-size="18" fill="#417e6d" letter-spacing="2">ДЕМО · КОНСПЕКТ</text>
+    <text x="88" y="153" font-size="54" font-weight="700">Клетка: что важно увидеть</text>
+    <text x="88" y="198" font-size="25" fill="#626c66">Сначала общая схема. Затем — три главные части.</text>
+    <g fill="none" stroke="#5da08d" stroke-width="5">
+      <ellipse cx="840" cy="427" rx="236" ry="163" fill="#e6f1eb"/>
+      <ellipse cx="840" cy="427" rx="222" ry="150" stroke-width="2"/>
+      <ellipse cx="838" cy="426" rx="91" ry="76" fill="#bcd8ca"/>
+      <circle cx="855" cy="420" r="25" fill="#6ba891" stroke="none"/>
+      <path d="M665 365q43-34 59-3t-49 23M948 493q40-34 55-2t-43 24" stroke="#97bbaa" stroke-linecap="round"/>
+      <path d="M490 307h180M490 421h253M490 549h180" stroke-width="2"/>
+    </g>
+    <g font-size="29" font-weight="700">
+      <text x="88" y="310">Мембрана</text><text x="88" y="424">Ядро</text><text x="88" y="552">Цитоплазма</text>
+    </g>
+    <g font-size="23" fill="#626c66">
+      <text x="88" y="347">Граница клетки</text><text x="88" y="461">Генетический материал</text><text x="88" y="589">Внутренняя среда</text>
+    </g>
+    <rect x="88" y="652" width="1024" height="57" rx="10" fill="#e6f1eb"/>
+    <text x="112" y="689" font-size="24" fill="#386b5c">Граница → внутреннее пространство → ядро</text>
+    <text x="88" y="749" font-size="15" fill="#626c66">Иллюстративный макет. Настоящий фрагмент конспекта будет добавлен позже.</text>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="42 24 304 260" fill="none">
+  <title>Christmedschool — академическая шапочка и округлая C</title>
+  <defs>
+    <mask id="page-gap" maskUnits="userSpaceOnUse" x="42" y="24" width="304" height="260">
+      <path d="M42 24H346V284H42Z" fill="#fff"/>
+      <path d="M106 80L194 40V52L106 92Z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <g mask="url(#page-gap)" fill="#5da08d" stroke="#5da08d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M94 66H118L194 31L338 96V117L268 149C246 127 220 117 194 117C166 117 140 128 120 149L106 142V155H94Z"/>
+    <path d="M50 96L88 79V88L60.5 100.7ZM53.5 118.5L88 101.5V134Z"/>
+    <circle cx="100" cy="164" r="11"/>
+    <path d="M89 174H111V210Q111 212 109 212H91Q89 212 89 210Z"/>
+    <path d="M263.3 187.8A72 69 0 1 0 263.3 225.8L233.9 217.2A42 42 0 1 1 233.9 195.8Z"/>
+  </g>
+</svg>

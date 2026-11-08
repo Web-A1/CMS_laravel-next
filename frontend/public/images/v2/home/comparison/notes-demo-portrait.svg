@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#eef5f1"/>
+  <rect x="24" y="24" width="752" height="952" rx="12" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#1a1d1f">
+    <text x="66" y="85" font-size="20" fill="#417e6d" letter-spacing="2">ДЕМО · КОНСПЕКТ</text>
+    <text x="66" y="157" font-size="49" font-weight="700">Как устроена клетка</text>
+    <text x="66" y="205" font-size="27" fill="#626c66">Три части. Одна понятная схема.</text>
+    <g fill="none" stroke="#5da08d" stroke-width="5">
+      <ellipse cx="400" cy="430" rx="248" ry="162" fill="#e6f1eb"/>
+      <ellipse cx="400" cy="430" rx="234" ry="149" stroke-width="2"/>
+      <ellipse cx="397" cy="427" rx="92" ry="76" fill="#bcd8ca"/>
+      <circle cx="413" cy="419" r="25" fill="#6ba891" stroke="none"/>
+      <path d="M230 365q45-35 59-3t-49 23M517 492q38-33 55-2t-43 24" stroke="#97bbaa" stroke-linecap="round"/>
+    </g>
+    <g font-size="30" font-weight="700">
+      <text x="66" y="670">Мембрана</text><text x="66" y="750">Цитоплазма</text><text x="66" y="830">Ядро</text>
+    </g>
+    <g font-size="28" fill="#626c66">
+      <text x="330" y="670">Граница клетки</text><text x="330" y="750">Внутренняя среда</text><text x="330" y="830">Хранит ДНК</text>
+    </g>
+    <path d="M66 700H734M66 780H734" stroke="#dfebe4" stroke-width="2"/>
+    <text x="66" y="933" font-size="18" fill="#626c66">Иллюстративный макет, позже заменим конспектом.</text>
+  </g>
+</svg>

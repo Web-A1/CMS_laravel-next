@@ -1,0 +1,201 @@
+{
+  "retrievedAt": "2026-11-08",
+  "sourceIndex": "https://staging.christmedschool.com/backend/api/v1/articles?limit=20",
+  "selectedFields": [
+    "slug",
+    "title",
+    "excerpt",
+    "body",
+    "bodyFormat",
+    "subject.slug",
+    "publishedAt",
+    "updatedAt",
+    "seoTitle",
+    "seoDescription",
+    "cover.url",
+    "cover.alt",
+    "cover.width",
+    "cover.height",
+    "author.slug",
+    "author.name",
+    "author.avatarUrl",
+    "author.photoUrl"
+  ],
+  "excludedFields": [
+    "database ids",
+    "related recommendations",
+    "related FAQs",
+    "responsive media variants",
+    "attachments (empty in all three selected articles)",
+    "private author/account fields"
+  ],
+  "transformations": [
+    "Entire body retained; picture/source delivery wrappers removed, original inline images retained.",
+    "Public image URLs replaced with local /storage/article-media paths; no editorial text changes."
+  ],
+  "articles": [
+    {
+      "sourceUrl": "https://staging.christmedschool.com/backend/api/v1/articles/razvitie-serdca",
+      "sourcePage": "https://staging.christmedschool.com/articles/razvitie-serdca",
+      "sourceResponseSha256": "80a03570223f601e46f539f3a978e9a971c8ae0a68a458afa0d0ea6f268a5b93",
+      "sourceBodySha256": "4367e991bb98c52be1c0dd396ecc69a8916864a6d07ee027112dc71d85d5b5a4",
+      "slug": "razvitie-serdca",
+      "title": "Развитие сердца",
+      "excerpt": "Сердце является первым органом, который начинает функционировать у эмбрионов позвоночных. Оно развивается из мезодермы. Эмбриогенез сердца начинается на 20-й день, когда в кардиогенной зоне краниального конца зародыша образуются парные эндокардиальные трубки. На 21-е сутки обе трубки начинают сливат",
+      "body": "<p>Сердце является первым органом, который начинает <strong>функционировать у эмбрионов позвоночных.</strong> Оно развивается из <em>мезодермы</em>.</p>\n\n<figure></source></source><img alt=\"\" src=\"/storage/article-media/93d026fc88116a5bb2fa8d646f4b487928bd5b9a20569d2dcab1826944adec16.jpg\" loading=\"lazy\" data-full-src=\"/storage/article-media/93d026fc88116a5bb2fa8d646f4b487928bd5b9a20569d2dcab1826944adec16.jpg\"></figure>\n\n<p>Эмбриогенез сердца начинается <strong>на 20-й день</strong>, когда в кардиогенной зоне краниального конца зародыша образуются парные <u>эндокардиальные трубки</u>. На 21-е сутки обе трубки начинают сливаться, а к 22-му дню формируется <em>единая сердечная трубка,</em> обеспечивающая ток крови от каудального конца эмбриона к краниальному.</p>\n\n<figure></source></source><img alt=\"\" src=\"/storage/article-media/1717fee7100b3847d16d3d6e98110ad493929f65a9451fe0014fc8596189d6ab.jpg\" loading=\"lazy\" data-full-src=\"/storage/article-media/1717fee7100b3847d16d3d6e98110ad493929f65a9451fe0014fc8596189d6ab.jpg\"></figure>\n\n<h3><strong>Сердечная трубка представлена несколькими отделами (от каудальной части к краниальной части):</strong></h3>\n\n<ul>\n\t<li>Венозный синус</li>\n\t<li>Примитивное предсердие</li>\n\t<li>Примитивный желудочек</li>\n\t<li>Сердечная луковица </li>\n\t<li>Артериальный ствол</li>\n</ul>\n\n<p>Внутренние поверхности примитивного предсердия и примитивного желудочка <strong>трабекулярные.</strong></p>\n\n<p>Внутренние поверхности венозного синуса, сердечной луковицы и артериального ствола <strong>гладкие.</strong></p>\n\n<p>Примитивное предсердие и примитивный желудочек растут, что в том числе происходит из-за <strong>включения соседних структур:</strong></p>\n\n<ul>\n\t<li>В состав примитивного предсердия входит <em>венозный синус</em></li>\n\t<li>В состав примитивного желудочка входит <em>луковица сердца</em></li>\n</ul>\n\n<h3><strong>Сердечная трубка сворачивается и приобретает S-форму:</strong></h3>\n\n<ul>\n\t<li>Изгибается и вращается</li>\n\t<li>Примитивный желудочек растет быстрее и направляется вниз, вентрально (кпереди) и вправо</li>\n\t<li>Примитивное предсердие направляется вверх, дорсально (кзади) и влево</li>\n\t<li>В результате камеры сердца начинают занимать их <u>постнатальное анатомическое положение</u> (то есть такое, какое занимают камеры сердца после рождения: предсердия находятся над желудочками/артерии выходят из сердца на передней поверхности/вены входят в сердце со стороны задней поверхности).</li>\n</ul>\n\n<p>Далее в трубке происходит <strong>септация</strong>, в результате чего формируется <em>четырёхкамерное сердце.</em> Спонтанные сокращения миокарда (сердцебиение) <em>появляются на 4-й неделе развития.</em></p>\n\n<p>Важнейшую роль в морфогенезе сердца играют <strong>клетки нервного гребня</strong> (имеющие нейроэктодермальное происхождение), которые мигрируют в зачатки органа и регулируют его <em>правильное формирование.</em></p>\n\n<h2><strong>Структуры постнатального сердца, которые развиваются из структур примитивного сердца</strong></h2>\n\n<table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><strong>Структуры примитивного сердца</strong></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><strong>Структуры постнатального сердца</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Артериальный ствол</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Аорта и аортальный клапан, лёгочный ствол и клапан лёгочного ствола</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Луковица сердца</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Гладкая часть правого желудочка</p>\n\n\t\t\t<p>Гладкая часть левого желудочка</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Примитивный желудочек</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Трабекулярная часть правого желудочка</p>\n\n\t\t\t<p>Трабекулярная часть левого желудочка</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Примитивное предсердие</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Трабекулярная часть правого предсердия</p>\n\n\t\t\t<p>Трабекулярная часть левого предсердия</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Венозный синус</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Справа - гладкая часть правого предсердия</p>\n\n\t\t\t<p>Слева – коронарный синус и косая вена левого предсердия</p>\n\n\t\t\t\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>В нашем курсе по <a href=\"https://christmedschool.com/gistologiya-serdechno-sosudistoj-sistemy\">гистологии сердечно-сосудистой системы</a> есть ещё больше информации о развитии сердца.</p>\n\n\n",
+      "bodyFormat": "html",
+      "subjectSlug": "gistologiya",
+      "publishedAt": "2026-09-27T10:49:23+00:00",
+      "updatedAt": "2026-09-27T10:49:23+00:00",
+      "seoTitle": "Развитие сердца",
+      "seoDescription": null,
+      "cover": {
+        "path": "article-media/30f38df83415a072ac5a8fb38beed50a2c89b403fb227e446223c55b6bc25a9a.webp",
+        "alt": "Развитие сердца",
+        "width": null,
+        "height": null
+      },
+      "author": {
+        "slug": "lagutin-nikita",
+        "name": "Никита Лагутин",
+        "avatarPath": "article-media/99fdab2beb8bf73c93b80f8025a55587f3531243d27ca20b4a0bbe5e83e51f3a.webp",
+        "photoPath": "article-media/473bd21b9353f7350506a2dda14378f887cf320eeeea2027ab126800054238c2.webp"
+      }
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/backend/api/v1/articles/pochemu-v-biohimii-nuzhny-klinicheskie-boksy-kak-teoriya-stanovitsya-vrachebnoj-praktikoj",
+      "sourcePage": "https://staging.christmedschool.com/articles/pochemu-v-biohimii-nuzhny-klinicheskie-boksy-kak-teoriya-stanovitsya-vrachebnoj-praktikoj",
+      "sourceResponseSha256": "8ec83d16deb2f4dabe3d883af97dec9623a3af3e51ef7c4dfe7a4cdad89a140c",
+      "sourceBodySha256": "56c87f32de7f59326626a9a31a71f80257d6503c405308f66128f127f8a2838a",
+      "slug": "pochemu-v-biohimii-nuzhny-klinicheskie-boksy-kak-teoriya-stanovitsya-vrachebnoj-praktikoj",
+      "title": "Почему в биохимии нужны клинические боксы: как теория становится врачебной практикой",
+      "excerpt": "Биохимия для студента‑медика — это не просто набор реакций, ферментов и метаболических путей. Это язык, на котором организм «рассказывает» о своём состоянии, а врач — читает симптомы и выбирает тактику. Именно поэтому критически важно, чтобы рядом с теорией сразу шла клиническая иллюстрация: где и к",
+      "body": "<p><strong>Биохимия для студента‑медика</strong> — это не просто набор реакций, ферментов и метаболических путей. Это язык, на котором организм «рассказывает» о своём состоянии, а врач — <strong>читает симптомы и выбирает тактику.</strong> Именно поэтому критически важно, чтобы рядом с теорией сразу шла <em>клиническая иллюстрация:</em> где и как эта реакция нарушается, как это проявляется у пациента и что с этим делает врач.</p>\n\n<h2><strong>Теория без практики быстро забывается</strong></h2>\n\n<p>Когда студент учит метаболические пути, вроде цикла Кребса или гликолиза, перед глазами мелькают <em>формулы, названия ферментов и стрелки реакций</em>. Всё это сливается в плотный поток терминов, который к экзамену держится на зубрёжке, а <em>после — быстро выветривается.</em> Мозг плохо запоминает изолированные факты, но отлично удерживает <strong>причинно‑следственные цепочки</strong>. Особенно если они заканчиваются чем‑то реальным — <u>симптомами, анализами, врачебными решениями.</u> Например, в норме аминокислота фенилаланин превращается в тирозин под действием фермента фенилаланин‑4‑гидроксилазы (PAH). <strong>Клинический бокс:</strong> если фермент PAH не работает из‑за генетического дефекта, <em>фенилаланин накапливается в крови и тканях.</em> <strong>Избыток фенилаланина токсичен для нервной системы</strong>: он нарушает формирование <u>миелина</u>, работу нейротрансмиттеров и приводит к тяжёлому поражению головного мозга. Клинически это проявляется <strong>задержкой психомоторного развития, судорогами, характерным «мышиным» запахом пота и мочи, гипопигментацией кожи и волос </strong>(потому что тирозин — предшественник меланина).</p>\n\n<p>И вот здесь <em>теория становится практикой:</em> врач видит ребёнка с задержкой развития и назначает анализ на уровень фенилаланина в крови. Если показатель повышен — это <u>красный флаг ФКУ.</u></p>\n\n<p><em>В конспектах ChristMedSchool </em>к каждой теме по биохимии добавлены <strong>клинические боксы </strong>— короткие, но ёмкие вставки рядом с теорией. В теме про обмен аминокислот такой бокс сразу показывает ФКУ: в нём кратко и по делу расписаны биохимический дефект, ключевые проявления и базовая тактика. Вам не нужно тратить время на самостоятельный поиск примеров: <strong>теория и практика идут вместе,</strong> и сразу понятно, зачем нужна эта реакция и как она пригодится в реальной работе.</p>\n\n<p><strong>Клинические боксы не усложняют биохимию</strong> — они придают ей смысл. Они помогают студенту видеть не просто «схему в учебнике», а <em>живой механизм</em>, который может дать сбой, и врача, который этот сбой<em> распознаёт и исправляет</em>. Именно так сухая теория превращается в профессиональное знание, которое пригодится уже сегодня — на <strong>коллоквиуме, экзамене и в будущей врачебной практике.</strong></p>\n\n\n",
+      "bodyFormat": "html",
+      "subjectSlug": "biohimiya",
+      "publishedAt": "2026-10-09T15:26:44+00:00",
+      "updatedAt": "2026-10-09T15:26:44+00:00",
+      "seoTitle": "Почему в биохимии нужны клинические боксы: как теория становится врачебной практикой",
+      "seoDescription": null,
+      "cover": {
+        "path": "article-media/e505ca1ed5cc7b4787cc63732c0a1bb2cfeb8338cf42bedb18b77cf43602df0c.webp",
+        "alt": "Почему в биохимии нужны клинические боксы: как теория становится врачебной практикой",
+        "width": null,
+        "height": null
+      },
+      "author": {
+        "slug": "lazareva-elena-konstantinovna",
+        "name": "Елена Лазарева",
+        "avatarPath": "article-media/41edc0e02b4880349a9f842cb75fd67909eb51f6c3bcbd4d8993d81cdff456b7.webp",
+        "photoPath": "article-media/454c1bc089c33d1238c4e7d7dcd9c2ae2b48c03b1ace5804cb0f2ae250afd692.webp"
+      }
+    },
+    {
+      "sourceUrl": "https://staging.christmedschool.com/backend/api/v1/articles/biosintez-mocheviny-i-ego-ehtapy",
+      "sourcePage": "https://staging.christmedschool.com/articles/biosintez-mocheviny-i-ego-ehtapy",
+      "sourceResponseSha256": "1bfd60454e7fad35f298bdc52cbcf739453c4fa78d3d37364658a543506b2a9a",
+      "sourceBodySha256": "4f0afca625794755f6720640b822fbfd75991bc3edf4005056b47462f8c2737f",
+      "slug": "biosintez-mocheviny-i-ego-ehtapy",
+      "title": "Биосинтез мочевины и его этапы",
+      "excerpt": "Биосинтез мочевины — центральный путь азотистого обмена у млекопитающих, обеспечивающий детоксикацию аммиака — высокотоксичного продукта дезаминирования аминокислот. Циклический путь синтеза мочевины был открыт Г. Кребсом и К. Гензелейтом в 1932 году, и который получил название орнитинового цикла (и",
+      "body": "<p><strong>Биосинтез мочевины</strong> — центральный путь азотистого обмена у млекопитающих, обеспечивающий <em>детоксикацию аммиака</em> — высокотоксичного продукта дезаминирования аминокислот. Циклический путь синтеза мочевины был открыт <strong>Г. Кребсом и К. Гензелейтом в 1932 году,</strong> и который получил название <strong>орнитинового цикла (или цикла Кребса–Гензелейта).</strong> Процесс протекает исключительно в <em>печени</em> и включает пять ферментативных реакций, локализованных в двух клеточных компартментах — митохондриях и цитозоле</p>\n\n<h2><strong>Орнитиновый цикл</strong></h2>\n\n<p>Синтез мочевины представляет собой циклический процесс, ключевым соединением которого является <strong>орнитин</strong>. Реакции орнитинового цикла до стадии образования <u>цитруллина протекают в митохондриях</u>, а последующие стадии — в <u>цитозоле</u>.</p>\n\n<h3><strong>Этап 1. Образование карбамоилфосфата (митохондрии)</strong></h3>\n\n<p>Аммиак связывается с бикарбонатом (или с диоксидом углерода) с образованием <strong>карбамоилфосфата</strong>. Реакция катализируется карбамоилфосфатсинтетазой I и требует затраты<em> 2 молекул АТФ.</em></p>\n\n<p><strong>NH₃ + HCO₃⁻ + 2 АТФ → Карбамоилфосфат + 2 АДФ + 2 Pi</strong></p>\n\n<h3><strong>Этап 2. Образование цитруллина (митохондрии)</strong></h3>\n\n<p>Карбамоильная группа карбамоилфосфата переносится на орнитин под действием <em>орнитинкарбамоилтрансферазы</em>— образуется <strong>цитруллин</strong>.</p>\n\n<p><strong>Карбамоилфосфат + L-Орнитин → L-Цитруллин + Pi</strong></p>\n\n<h3><strong>Этап 3. Образование аргининосукцината (цитозоль)</strong></h3>\n\n<p>Цитруллин конденсируется с аспартатом (вторым источником азота мочевины) с образованием аргининосукцината. Реакция катализируется аргининосукцинатсинтетазой, требует<em> 1 моль АТФ и ионы Mg²⁺.</em></p>\n\n<p><strong>L-Цитруллин + L-Аспартат + АТФ → Аргининосукцинат + АМФ + PPi</strong></p>\n\n<h3><strong>Этап 4. Расщепление аргининосукцината (цитозоль)</strong></h3>\n\n<p>Аргининосукцинатлиаза (аргининосукциназа) расщепляет аргининосукцинат на аргинин и фумарат.</p>\n\n<p><strong>Аргининосукцинат → L-Аргинин + Фумарат</strong></p>\n\n<h3><strong>Этап 5. Гидролиз аргинина (цитозоль)</strong></h3>\n\n<p>Аргиназа гидролизует аргинин, образуя мочевину и регенерируя орнитин, который возвращается в митохондрии для нового цикла.</p>\n\n<p><strong>L-Аргинин + H₂O → L-Орнитин + Мочевина</strong></p>\n\n<h2><strong>Суммарное уравнение и энергетика</strong></h2>\n\n<p>Суммарное уравнение биосинтеза мочевины:</p>\n\n<p><strong>CO₂ + NH₃ + Аспартат + 3 АТФ + 2 H₂O → Мочевина + Фумарат + 2 (АДФ + H₃PO₄) + АМФ + H₄P₂O₇</strong></p>\n\n<p>На синтез одной молекулы мочевины затрачивается<strong> 3 молекулы АТФ (но 4 макроэргические связи).</strong></p>\n\n<p>Подробнее об орнитиновом цикле <a href=\"https://christmedschool.com/intazob.html\">можно найти в нашем курсе по биохимии</a></p>\n\n\n",
+      "bodyFormat": "html",
+      "subjectSlug": "biohimiya",
+      "publishedAt": "2026-09-19T13:06:13+00:00",
+      "updatedAt": "2026-09-19T13:06:13+00:00",
+      "seoTitle": "Биосинтез мочевины и его этапы",
+      "seoDescription": null,
+      "cover": {
+        "path": "article-media/0e6175a807f0fb7833fe3dd94b1f7127eda3747a621b269e653bba1f3954ca44.webp",
+        "alt": "Биосинтез мочевины и его этапы",
+        "width": null,
+        "height": null
+      },
+      "author": {
+        "slug": "belyaeva-juliya",
+        "name": "Юлия Беляева",
+        "avatarPath": "article-media/b3b2ad58ad0db3e3d42ad9fb26bdccfba126be67ecb276dd9245afeac0606331.webp",
+        "photoPath": "article-media/f3b7af490eeab28e8f4e197c11b87167962992743c82840375ed074541775f82.webp"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/1717fee7100b3847d16d3d6e98110ad493929f65a9451fe0014fc8596189d6ab.jpg",
+      "path": "backend/database/demo-media/article-media/1717fee7100b3847d16d3d6e98110ad493929f65a9451fe0014fc8596189d6ab.jpg",
+      "storagePath": "article-media/1717fee7100b3847d16d3d6e98110ad493929f65a9451fe0014fc8596189d6ab.jpg",
+      "sha256": "1717fee7100b3847d16d3d6e98110ad493929f65a9451fe0014fc8596189d6ab",
+      "bytes": 313149
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/93d026fc88116a5bb2fa8d646f4b487928bd5b9a20569d2dcab1826944adec16.jpg",
+      "path": "backend/database/demo-media/article-media/93d026fc88116a5bb2fa8d646f4b487928bd5b9a20569d2dcab1826944adec16.jpg",
+      "storagePath": "article-media/93d026fc88116a5bb2fa8d646f4b487928bd5b9a20569d2dcab1826944adec16.jpg",
+      "sha256": "93d026fc88116a5bb2fa8d646f4b487928bd5b9a20569d2dcab1826944adec16",
+      "bytes": 380672
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/30f38df83415a072ac5a8fb38beed50a2c89b403fb227e446223c55b6bc25a9a.webp",
+      "path": "backend/database/demo-media/article-media/30f38df83415a072ac5a8fb38beed50a2c89b403fb227e446223c55b6bc25a9a.webp",
+      "storagePath": "article-media/30f38df83415a072ac5a8fb38beed50a2c89b403fb227e446223c55b6bc25a9a.webp",
+      "sha256": "30f38df83415a072ac5a8fb38beed50a2c89b403fb227e446223c55b6bc25a9a",
+      "bytes": 16374
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/99fdab2beb8bf73c93b80f8025a55587f3531243d27ca20b4a0bbe5e83e51f3a.webp",
+      "path": "backend/database/demo-media/article-media/99fdab2beb8bf73c93b80f8025a55587f3531243d27ca20b4a0bbe5e83e51f3a.webp",
+      "storagePath": "article-media/99fdab2beb8bf73c93b80f8025a55587f3531243d27ca20b4a0bbe5e83e51f3a.webp",
+      "sha256": "99fdab2beb8bf73c93b80f8025a55587f3531243d27ca20b4a0bbe5e83e51f3a",
+      "bytes": 20234
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/473bd21b9353f7350506a2dda14378f887cf320eeeea2027ab126800054238c2.webp",
+      "path": "backend/database/demo-media/article-media/473bd21b9353f7350506a2dda14378f887cf320eeeea2027ab126800054238c2.webp",
+      "storagePath": "article-media/473bd21b9353f7350506a2dda14378f887cf320eeeea2027ab126800054238c2.webp",
+      "sha256": "473bd21b9353f7350506a2dda14378f887cf320eeeea2027ab126800054238c2",
+      "bytes": 8050
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/e505ca1ed5cc7b4787cc63732c0a1bb2cfeb8338cf42bedb18b77cf43602df0c.webp",
+      "path": "backend/database/demo-media/article-media/e505ca1ed5cc7b4787cc63732c0a1bb2cfeb8338cf42bedb18b77cf43602df0c.webp",
+      "storagePath": "article-media/e505ca1ed5cc7b4787cc63732c0a1bb2cfeb8338cf42bedb18b77cf43602df0c.webp",
+      "sha256": "e505ca1ed5cc7b4787cc63732c0a1bb2cfeb8338cf42bedb18b77cf43602df0c",
+      "bytes": 20196
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/41edc0e02b4880349a9f842cb75fd67909eb51f6c3bcbd4d8993d81cdff456b7.webp",
+      "path": "backend/database/demo-media/article-media/41edc0e02b4880349a9f842cb75fd67909eb51f6c3bcbd4d8993d81cdff456b7.webp",
+      "storagePath": "article-media/41edc0e02b4880349a9f842cb75fd67909eb51f6c3bcbd4d8993d81cdff456b7.webp",
+      "sha256": "41edc0e02b4880349a9f842cb75fd67909eb51f6c3bcbd4d8993d81cdff456b7",
+      "bytes": 26460
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/454c1bc089c33d1238c4e7d7dcd9c2ae2b48c03b1ace5804cb0f2ae250afd692.webp",
+      "path": "backend/database/demo-media/article-media/454c1bc089c33d1238c4e7d7dcd9c2ae2b48c03b1ace5804cb0f2ae250afd692.webp",
+      "storagePath": "article-media/454c1bc089c33d1238c4e7d7dcd9c2ae2b48c03b1ace5804cb0f2ae250afd692.webp",
+      "sha256": "454c1bc089c33d1238c4e7d7dcd9c2ae2b48c03b1ace5804cb0f2ae250afd692",
+      "bytes": 38174
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/0e6175a807f0fb7833fe3dd94b1f7127eda3747a621b269e653bba1f3954ca44.webp",
+      "path": "backend/database/demo-media/article-media/0e6175a807f0fb7833fe3dd94b1f7127eda3747a621b269e653bba1f3954ca44.webp",
+      "storagePath": "article-media/0e6175a807f0fb7833fe3dd94b1f7127eda3747a621b269e653bba1f3954ca44.webp",
+      "sha256": "0e6175a807f0fb7833fe3dd94b1f7127eda3747a621b269e653bba1f3954ca44",
+      "bytes": 18306
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/b3b2ad58ad0db3e3d42ad9fb26bdccfba126be67ecb276dd9245afeac0606331.webp",
+      "path": "backend/database/demo-media/article-media/b3b2ad58ad0db3e3d42ad9fb26bdccfba126be67ecb276dd9245afeac0606331.webp",
+      "storagePath": "article-media/b3b2ad58ad0db3e3d42ad9fb26bdccfba126be67ecb276dd9245afeac0606331.webp",
+      "sha256": "b3b2ad58ad0db3e3d42ad9fb26bdccfba126be67ecb276dd9245afeac0606331",
+      "bytes": 28882
+    },
+    {
+      "sourceUrl": "https://34714e1a-1624-4964-8c38-6afdce553b55.selstorage.ru/article-media/f3b7af490eeab28e8f4e197c11b87167962992743c82840375ed074541775f82.webp",
+      "path": "backend/database/demo-media/article-media/f3b7af490eeab28e8f4e197c11b87167962992743c82840375ed074541775f82.webp",
+      "storagePath": "article-media/f3b7af490eeab28e8f4e197c11b87167962992743c82840375ed074541775f82.webp",
+      "sha256": "f3b7af490eeab28e8f4e197c11b87167962992743c82840375ed074541775f82",
+      "bytes": 160500
+    }
+  ]
+}

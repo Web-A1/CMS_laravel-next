@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="#5da08d">
+  <title>Christmedschool</title>
+  <g transform="translate(0 43)">
+    <path d="M119 5Q128 1 137 5L249 52Q262 58 249 65L137 112Q128 116 119 112L7 65Q-6 58 7 52Z"/>
+    <path d="M49 100L115 128Q128 134 141 128L207 100V144C207 158 171 170 128 170S49 158 49 144Z"/>
+    <path d="M231 65H243V119H231Z"/>
+    <circle cx="237" cy="128" r="14"/>
+  </g>
+</svg>

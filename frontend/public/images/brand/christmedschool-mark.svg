@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="33 29 222 249" fill="none">
+  <title>Christmedschool</title>
+  <g fill="#5da08d" stroke="#5da08d" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M144 31Q146 31 148 32L251 91Q254 92.5 254 96V211Q254 214 252 215L199 185V125Q199 123 197 122L147 93Q144 91.5 144 88Z"/>
+    <path d="M36 92L142 153Q145 154.5 145 157V273Q145 277 142 275.5L37 216Q34 214.5 34 211V96Q34 93 36 92Z"/>
+  </g>
+  <g stroke="#5da08d" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M36 92L141 31.5Q144 30 147 31.5M89 62V122M89 62L147 93"/>
+    <path d="M145 217L199 245.5M199 185V245.5M252 215L147 275.5Q145 277 142 275.5"/>
+  </g>
+</svg>

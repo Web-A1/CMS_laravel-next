@@ -1,0 +1,45 @@
+.support-voice-player__seek {
+  appearance: none;
+  background: transparent;
+}
+
+.support-voice-player__seek::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  /* The two solid segments show playback progress, not a decorative gradient. */
+  background: linear-gradient(to right, var(--color-brand) 0 var(--voice-progress), var(--color-border-subtle) var(--voice-progress) 100%);
+}
+
+.support-voice-player__seek::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-brand);
+}
+
+.support-voice-player__seek::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--color-border-subtle);
+}
+
+.support-voice-player__seek::-moz-range-progress {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--color-brand);
+}
+
+.support-voice-player__seek::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-brand);
+}
+
+.support-voice-player__seek:disabled {
+  opacity: 0.5;
+}

@@ -1,0 +1,11 @@
+.catalog-search__input:focus {
+  outline: none;
+}
+
+.catalog-search__submit {
+  position: absolute;
+  inset-block-start: 1px;
+  inset-inline-start: 1px;
+  width: 1.875rem;
+  height: 1.875rem;
+}

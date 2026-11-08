@@ -1,0 +1,137 @@
+@import "../components/content/prose.css";
+
+.articles-page__shell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-content-gap);
+}
+
+.articles-page__header,
+.articles-page__intro,
+.articles-detail__header,
+.articles-detail__body {
+  display: grid;
+}
+
+.articles-page__header {
+  gap: 1.25rem;
+}
+
+.articles-page__intro,
+.articles-detail__header {
+  gap: 0.75rem;
+}
+
+.articles-page__intro h1,
+.articles-page__intro p,
+.articles-detail__header h1,
+.articles-detail__header p,
+.articles-detail__body p {
+  margin: 0;
+}
+
+.articles-page__pills {
+  --ui-pill-strip-edge-padding: 0;
+  width: calc(100% + 2 * var(--page-gutter));
+  max-width: calc(100% + 2 * var(--page-gutter));
+  margin-inline: calc(-1 * var(--page-gutter));
+  padding-block: 0.125rem 0.25rem;
+}
+
+.articles-page__pills .ui-pill-strip__inner {
+  padding-inline: var(--page-gutter);
+}
+
+.articles-page__body {
+  min-width: 0;
+}
+
+.articles-page__list {
+  margin: 0;
+}
+
+.articles-page__list > li {
+  position: relative;
+}
+
+.articles-page__empty {
+  margin: 0;
+}
+
+.articles-detail__shell {
+  display: grid;
+  gap: var(--section-content-gap);
+}
+
+.articles-detail__body {
+  gap: 1rem;
+}
+
+.articles-detail__back {
+  justify-self: start;
+}
+
+@media (48rem <= width < 64rem) {
+  .articles-detail__sidebar {
+    display: grid;
+    align-items: start;
+    grid-template-areas: "related author";
+    /* The author grows from one third to one half as the viewport narrows. */
+    grid-template-columns: minmax(0, 1fr) minmax(0, clamp(
+      calc((100% - 1.5rem) / 3),
+      calc((100% - 1.5rem) / 2 - (100vw - 48rem) * 1.25),
+      calc((100% - 1.5rem) / 2)
+    ));
+  }
+
+  .articles-detail__sidebar > [data-ui="articles.showcase.author"] {
+    grid-area: author;
+  }
+
+  .articles-detail__sidebar > [data-ui="articles.related"] {
+    grid-area: related;
+  }
+
+  .articles-detail__sidebar > :only-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 640px) {
+  .articles-page__list > li:nth-child(2n + 1)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1.5rem;
+    width: 1px;
+    background: var(--color-border-subtle);
+  }
+
+  .articles-page__pills {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
+  }
+
+  .articles-page__pills .ui-pill-strip__inner {
+    justify-content: flex-start;
+    padding-inline: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .articles-page__list > li:nth-child(2n + 1)::after {
+    content: none;
+  }
+
+  .articles-page__list > li:not(:nth-child(3n))::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1.5rem;
+    width: 1px;
+    background: var(--color-border-subtle);
+  }
+}

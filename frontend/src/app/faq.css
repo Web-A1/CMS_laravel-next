@@ -1,0 +1,132 @@
+.faq-page {
+  color: var(--color-text-primary);
+  background: #fff;
+}
+
+.faq-page__shell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-content-gap);
+}
+
+.faq-page__header {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.faq-page__intro {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.faq-page__intro h1,
+.faq-page__intro p {
+  margin: 0;
+}
+
+.faq-page__intro p {
+  color: var(--color-text-secondary);
+  font-size: var(--type-card-body-large-size);
+  font-weight: 500;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.faq-page__pills {
+  --ui-pill-strip-edge-padding: 0;
+  --faq-page-pills-right-peek: 3rem;
+  width: calc(100dvw - var(--page-edge-gutter));
+  max-width: calc(100dvw - var(--page-edge-gutter));
+  margin-inline: calc(50% - ((100dvw - var(--page-edge-gutter)) / 2));
+  padding-block: 0.125rem 0.25rem;
+}
+
+.faq-page__pills .ui-pill-strip__inner {
+  padding-inline-start: var(--page-gutter);
+  padding-inline-end: var(--faq-page-pills-right-peek);
+}
+
+.faq-page__body {
+  min-width: 0;
+}
+
+.faq-page__list {
+  display: grid;
+  gap: var(--section-card-grid-gap);
+}
+
+.faq-page__item {
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--color-surface-raised);
+}
+
+.faq-page__summary {
+  position: relative;
+  display: flex;
+  min-height: 4.875rem;
+  cursor: pointer;
+  align-items: center;
+  padding: 1rem 3.25rem 1rem 1rem;
+  color: var(--color-text-primary);
+  font-size: var(--type-card-title-size);
+  font-weight: 700;
+  line-height: var(--type-card-title-line-height);
+  list-style: none;
+  text-wrap: pretty;
+}
+
+.faq-page__summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-page__summary::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: var(--color-brand);
+  font-size: 1rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.faq-page__item[open] .faq-page__summary::after {
+  content: "-";
+  color: var(--color-text-body);
+  background: rgb(175 168 159 / 50%);
+}
+
+.faq-page__answer {
+  margin: 0;
+  padding: 0 1rem 1rem;
+  color: var(--color-text-body);
+  font-size: var(--type-card-body-size);
+  font-weight: 500;
+  line-height: var(--type-card-body-line-height);
+  text-wrap: pretty;
+}
+
+.faq-page__empty {
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .faq-page__pills {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
+  }
+
+  .faq-page__pills .ui-pill-strip__inner {
+    justify-content: flex-start;
+    padding-inline: 0;
+  }
+}
